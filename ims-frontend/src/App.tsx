@@ -5,13 +5,12 @@ import Dashboard from './pages/Dashboard';
 import Products from './pages/Products';
 import Suppliers from './pages/Suppliers';
 import Login from './pages/Login';
+import Signup from './pages/Signup'; // Import Signup page
 
 const App: React.FC = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-  const toggleAuth = () => {
-    setIsLoggedIn(!isLoggedIn);
-  };
+  const toggleAuth = () => setIsLoggedIn(!isLoggedIn);
 
   return (
     <div>
@@ -22,6 +21,7 @@ const App: React.FC = () => {
           <Route path="/products" element={<Products />} />
           <Route path="/suppliers" element={<Suppliers />} />
           <Route path="/login" element={<Login login={() => setIsLoggedIn(true)} />} />
+          <Route path="/signup" element={<Signup />} /> {/* Route for Sign Up */}
         </Routes>
       </div>
     </div>
@@ -29,6 +29,8 @@ const App: React.FC = () => {
 };
 
 export default App;
+
+
 
 
 

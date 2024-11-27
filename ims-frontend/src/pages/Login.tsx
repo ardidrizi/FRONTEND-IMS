@@ -14,8 +14,8 @@ const Login: React.FC<LoginProps> = ({ login }) => {
     e.preventDefault();
 
     if (username && password) {
-      login(); // Call the login function passed as a prop
-      navigate('/dashboard'); // Redirect to the dashboard
+      login(); // Trigger login function
+      navigate('/dashboard'); // Redirect to Dashboard
     } else {
       alert('Please fill in both fields.');
     }
@@ -51,10 +51,20 @@ const Login: React.FC<LoginProps> = ({ login }) => {
             Login
           </button>
         </form>
+        <p className="mt-4 text-gray-600 text-center">
+          Don't have an account?{' '}
+          <button
+            onClick={() => navigate('/signup')}
+            className="text-highlight underline"
+          >
+            Sign Up
+          </button>
+        </p>
       </div>
     </div>
   );
 };
 
 export default Login;
+
 
