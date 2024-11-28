@@ -1,27 +1,32 @@
 import React, { useState } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Dashboard from './pages/Dashboard';
 import Products from './pages/Products';
 import Suppliers from './pages/Suppliers';
 import Login from './pages/Login';
-import Signup from './pages/Signup'; // Import Signup page
+import Signup from './pages/Signup';
 
 const App: React.FC = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const location = useLocation();
 
   const toggleAuth = () => setIsLoggedIn(!isLoggedIn);
 
+  // Show Navbar only on /admin routes
+  const isAdminRoute = location.pathname.startsWith('/admin');
+
   return (
     <div>
-      <Navbar isLoggedIn={isLoggedIn} toggleAuth={toggleAuth} />
-      <div className="pt-16">
+      {isAdminRoute && <Navbar isLoggedIn={isLoggedIn} toggleAuth={toggleAuth} />}
+      <div className={isAdminRoute ? 'pt-16' : ''}>
         <Routes>
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/products" element={<Products />} />
-          <Route path="/suppliers" element={<Suppliers />} />
-          <Route path="/login" element={<Login login={() => setIsLoggedIn(true)} />} />
-          <Route path="/signup" element={<Signup />} /> {/* Route for Sign Up */}
+          {/* Admin Routes */}
+          <Route path="/admin/dashboard" element={<Dashboard />} />
+          <Route path="/admin/products" element={<Products />} />
+          <Route path="/admin/suppliers" element={<Suppliers />} />
+          <Route path="/admin/login" element={<Login login={() => setIsLoggedIn(true)} />} />
+          <Route path="/admin/signup" element={<Signup />} />
         </Routes>
       </div>
     </div>
@@ -29,6 +34,8 @@ const App: React.FC = () => {
 };
 
 export default App;
+
+
 
 
 

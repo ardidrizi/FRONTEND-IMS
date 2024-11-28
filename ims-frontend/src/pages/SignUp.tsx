@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Signup: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -9,6 +10,7 @@ const Signup: React.FC = () => {
   });
 
   const [error, setError] = useState('');
+  const navigate = useNavigate();
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -30,10 +32,11 @@ const Signup: React.FC = () => {
       return;
     }
 
-    // Submit form data (mock or real backend logic here)
+    // Mock form submission
     console.log('Sign up successful:', formData);
     setError('');
     alert('Account created successfully!');
+    navigate('/admin/login'); // Redirect to Login page after signup
   };
 
   return (
@@ -95,7 +98,7 @@ const Signup: React.FC = () => {
         </form>
         <p className="mt-4 text-gray-600 text-center">
           Already have an account?{' '}
-          <a href="/login" className="text-highlight underline">
+          <a href="/admin/login" className="text-highlight underline">
             Login here
           </a>
         </p>

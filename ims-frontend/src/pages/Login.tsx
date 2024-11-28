@@ -15,7 +15,7 @@ const Login: React.FC<LoginProps> = ({ login }) => {
 
     if (username && password) {
       login(); // Trigger login function
-      navigate('/dashboard'); // Redirect to Dashboard
+      navigate('/admin/dashboard'); // Redirect to Admin Dashboard
     } else {
       alert('Please fill in both fields.');
     }
@@ -54,7 +54,7 @@ const Login: React.FC<LoginProps> = ({ login }) => {
         <p className="mt-4 text-gray-600 text-center">
           Don't have an account?{' '}
           <button
-            onClick={() => navigate('/signup')}
+            onClick={() => navigate('/admin/signup')}
             className="text-highlight underline"
           >
             Sign Up
@@ -66,5 +66,6 @@ const Login: React.FC<LoginProps> = ({ login }) => {
 };
 
 export default Login;
+
 
 
