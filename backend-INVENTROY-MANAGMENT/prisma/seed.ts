@@ -3,33 +3,24 @@ import { PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient();
 
 async function main() {
-  // Check if Category I exists, if not, create it
-  const categoryI = await prisma.category.findFirst({
-    where: { name: "Category I" },
-  });
-
-  // If it doesn't exist, create Category I
-  if (!categoryI) {
-    await prisma.category.create({
-      data: {
+    // Ensure categories with IDs exist
+    await prisma.category.upsert({
+      where: { id: 1 },
+      update: {},
+      create: {
+        id: 1,
         name: "Category I",
       },
     });
-  }
-
-  // Check if Category II exists, if not, create it
-  const categoryII = await prisma.category.findFirst({
-    where: { name: "Category II" },
-  });
-
-  // If it doesn't exist, create Category II
-  if (!categoryII) {
-    await prisma.category.create({
-      data: {
+  
+    await prisma.category.upsert({
+      where: { id: 2 },
+      update: {},
+      create: {
+        id: 2,
         name: "Category II",
       },
     });
-  }
 
 
  

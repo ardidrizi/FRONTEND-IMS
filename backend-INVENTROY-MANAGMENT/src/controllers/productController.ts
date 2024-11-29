@@ -10,6 +10,7 @@ interface AddProductRequestBody {
   price: number;
   supplierId: number;
   categoryId: number;
+  picture: string; // Added picture field
 }
 
 export const getAllProducts = async (
@@ -34,11 +35,11 @@ export const addProduct = async (
   res: Response
 ): Promise<void> => {
   console.log(req.body);
-  const { name, price, supplierId } = req.body;
+  const { name, price, supplierId, picture } = req.body;
 
   // Validate the input fields
-  if (!name || !price || !supplierId) {
-    res.status(400).json({ error: "Name, price, and supplierId are required" });
+  if (!name || !price || !supplierId || !picture) {
+    res.status(400).json({ error: "Name, price, supplierId, and picture are required" });
     return;
   }
 
@@ -58,6 +59,7 @@ export const addProduct = async (
         supplierId,
         categoryId: 1, // Default category ID
         expiration: new Date(), // Default expiration date
+        picture, // Ensure picture is included
       },
     });
 
@@ -105,15 +107,15 @@ export const updateProduct = async (
 ): Promise<void> => {
   const { id } = req.params; // Get the product ID from the request parameters
   const productId = parseInt(id);
-  const { name, price, supplierId } = req.body;
+  const { name, price, supplierId, picture } = req.body;
 
   if (isNaN(productId)) {
     res.status(400).json({ error: "Invalid product ID" });
     return;
   }
 
-  if (!name || !price || !supplierId) {
-    res.status(400).json({ error: "Name, price, and supplierId are required" });
+  if (!name || !price || !supplierId || !picture) {
+    res.status(400).json({ error: "Name, price, supplierId, and picture are required" });
     return;
   }
 
@@ -130,6 +132,7 @@ export const updateProduct = async (
         name,
         price,
         supplierId,
+        picture, // Include picture in updates
       },
     });
 
