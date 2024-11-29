@@ -7,6 +7,7 @@ import Suppliers from './pages/Suppliers';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import SupermarketPage from './pages/SupermarketPage';
+import FruitsPage from './pages/categories/FruitsPage';
 
 const App: React.FC = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -29,6 +30,8 @@ const App: React.FC = () => {
           <Route path="/admin/login" element={<Login login={() => setIsLoggedIn(true)} />} />
           <Route path="/admin/signup" element={<Signup />} />
           <Route path="/supermarket" element={<SupermarketPage />} />
+          <Route path="/supermarket/fruits" element={<FruitsPage />} />
+
 
         </Routes>
       </div>
