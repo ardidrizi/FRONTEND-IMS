@@ -6,7 +6,7 @@ interface NavbarProps {
   toggleAuth: () => void;
 }
 
-const Navbar: React.FC<NavbarProps> = ({ isLoggedIn, toggleAuth }) => {
+const NavbarAdmin: React.FC<NavbarProps> = ({ isLoggedIn, toggleAuth }) => {
   const navigate = useNavigate();
 
   return (
@@ -67,4 +67,4 @@ const Navbar: React.FC<NavbarProps> = ({ isLoggedIn, toggleAuth }) => {
   );
 };
 
-export default Navbar;
+export default NavbarAdmin;

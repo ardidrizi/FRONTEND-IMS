@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
-import Navbar from './components/Navbar';
+import NavbarAdmin from './components/NavbarAdmin';
+import NavbarSupermarket from './components/NavbarSupermarket';
 import Dashboard from './pages/Dashboard';
 import Products from './pages/Products';
 import Suppliers from './pages/Suppliers';
-import Login from './pages/Login';
-import Signup from './pages/Signup';
+import LoginUserPage from './pages/LoginUserPage';
+import SignUserPage from './pages/SignUserPage';
 import SupermarketPage from './pages/SupermarketPage';
 import CategoryPage from './pages/CategoryPage';
 
@@ -15,24 +16,39 @@ const App: React.FC = () => {
 
   const toggleAuth = () => setIsLoggedIn(!isLoggedIn);
 
-  // Show Navbar only on /admin routes
+  // Determine which navbar to show based on the route
   const isAdminRoute = location.pathname.startsWith('/admin');
+  const isSupermarketRoute = location.pathname.startsWith('/supermarket');
+  const isAuthRoute = location.pathname === '/login' || location.pathname === '/signup';
 
   return (
     <div className="min-h-screen bg-white">
-      {isAdminRoute && <Navbar isLoggedIn={isLoggedIn} toggleAuth={toggleAuth} />}
-      <div className={isAdminRoute ? 'max-w-7xl mx-auto pt-16 px-4 sm:px-6 lg:px-8' : 'max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'}>
+      {/* Show appropriate navbar */}
+      {isAdminRoute && <NavbarAdmin isLoggedIn={isLoggedIn} toggleAuth={toggleAuth} />}
+      {(isSupermarketRoute || isAuthRoute) && <NavbarSupermarket />}
+
+      <div
+        className={
+          isAdminRoute
+            ? 'max-w-7xl mx-auto pt-16 px-4 sm:px-6 lg:px-8'
+            : 'max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'
+        }
+      >
         <Routes>
           {/* Admin Routes */}
           <Route path="/admin/dashboard" element={<Dashboard />} />
           <Route path="/admin/products" element={<Products />} />
           <Route path="/admin/suppliers" element={<Suppliers />} />
-          <Route path="/admin/login" element={<Login login={() => setIsLoggedIn(true)} />} />
-          <Route path="/admin/signup" element={<Signup />} />
+          <Route path="/admin/login" element={<LoginUserPage />} />
+          <Route path="/admin/signup" element={<SignUserPage />} />
 
           {/* Supermarket Routes */}
           <Route path="/supermarket" element={<SupermarketPage />} />
           <Route path="/supermarket/:category" element={<CategoryPage />} />
+
+          {/* Authentication Routes */}
+          <Route path="/login" element={<LoginUserPage />} />
+          <Route path="/signup" element={<SignUserPage />} />
         </Routes>
       </div>
     </div>
@@ -40,6 +56,7 @@ const App: React.FC = () => {
 };
 
 export default App;
+
 
 
 
