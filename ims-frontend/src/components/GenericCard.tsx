@@ -23,13 +23,13 @@ const GenericCard: React.FC<GenericCardProps> = ({ product }) => {
   const handleAddToCart = () => {
     if (quantity > 0) {
       addToCart({
-        id: product.id,
+        id: product.id, // Unique identifier
         title: product.title,
         price: product.price,
         image: product.image,
         quantity,
       });
-      setQuantity(0); // Reset quantity after adding
+      setQuantity(0); // Reset quantity after adding to the cart
       alert(`${quantity} ${product.title}(s) added to cart!`);
     }
   };
@@ -84,3 +84,4 @@ const GenericCard: React.FC<GenericCardProps> = ({ product }) => {
 };
 
 export default GenericCard;
+

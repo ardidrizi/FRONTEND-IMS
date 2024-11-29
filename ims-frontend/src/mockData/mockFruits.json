@@ -1,119 +1,139 @@
 [
   {
+    "id": "f1",
     "title": "Lemon",
     "description": "Category: I | Origin: Spain",
     "price": 0.99,
     "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/fruits.PNG?raw=true"
   },
   {
+    "id": "f2",
     "title": "Orange",
     "description": "Category: II | Origin: Italy",
     "price": 1.49,
     "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/fruits.PNG?raw=true"
   },
   {
+    "id": "f3",
     "title": "Apple",
     "description": "Category: I | Origin: France",
     "price": 1.29,
     "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/fruits.PNG?raw=true"
   },
   {
+    "id": "f4",
     "title": "Pear",
     "description": "Category: II | Origin: Spain",
     "price": 1.39,
     "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/fruits.PNG?raw=true"
   },
   {
+    "id": "f5",
     "title": "Grape",
     "description": "Category: I | Origin: Morocco",
     "price": 2.99,
     "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/fruits.PNG?raw=true"
   },
   {
+    "id": "f6",
     "title": "Blueberry",
     "description": "Category: I | Origin: Netherlands",
     "price": 3.49,
     "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/fruits.PNG?raw=true"
   },
   {
+    "id": "f7",
     "title": "Pineapple",
     "description": "Category: II | Origin: Costa Rica",
     "price": 2.79,
     "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/fruits.PNG?raw=true"
   },
   {
+    "id": "f8",
     "title": "Watermelon",
     "description": "Category: I | Origin: Greece",
     "price": 3.99,
     "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/fruits.PNG?raw=true"
   },
   {
+    "id": "f9",
     "title": "Strawberry",
     "description": "Category: II | Origin: Spain",
     "price": 4.49,
     "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/fruits.PNG?raw=true"
   },
   {
+    "id": "f10",
     "title": "Peach",
     "description": "Category: I | Origin: Italy",
     "price": 2.29,
     "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/fruits.PNG?raw=true"
   },
   {
+    "id": "f11",
     "title": "Plum",
     "description": "Category: II | Origin: France",
     "price": 1.89,
     "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/fruits.PNG?raw=true"
   },
   {
+    "id": "f12",
     "title": "Cherry",
     "description": "Category: I | Origin: Netherlands",
     "price": 5.49,
     "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/fruits.PNG?raw=true"
   },
   {
+    "id": "f13",
     "title": "Kiwi",
     "description": "Category: I | Origin: New Zealand",
     "price": 1.99,
     "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/fruits.PNG?raw=true"
   },
   {
+    "id": "f14",
     "title": "Banana",
     "description": "Category: II | Origin: Ecuador",
     "price": 0.89,
     "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/fruits.PNG?raw=true"
   },
   {
+    "id": "f15",
     "title": "Mango",
     "description": "Category: I | Origin: Mexico",
     "price": 2.49,
     "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/fruits.PNG?raw=true"
   },
   {
+    "id": "f16",
     "title": "Papaya",
     "description": "Category: II | Origin: Brazil",
     "price": 3.29,
     "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/fruits.PNG?raw=true"
   },
   {
+    "id": "f17",
     "title": "Raspberry",
     "description": "Category: I | Origin: Germany",
     "price": 4.29,
     "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/fruits.PNG?raw=true"
   },
   {
+    "id": "f18",
     "title": "Pomegranate",
     "description": "Category: II | Origin: India",
     "price": 2.89,
     "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/fruits.PNG?raw=true"
   },
   {
+    "id": "f19",
     "title": "Coconut",
     "description": "Category: I | Origin: Sri Lanka",
     "price": 3.49,
     "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/fruits.PNG?raw=true"
   },
   {
+    "id": "f20",
     "title": "Fig",
     "description": "Category: II | Origin: Turkey",
     "price": 2.19,

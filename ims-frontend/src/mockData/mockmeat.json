@@ -1,119 +1,139 @@
 [
   {
+    "id": "m1",
     "title": "Chicken Breast",
     "description": "Brand: Tyson | 500g",
     "price": 4.99,
     "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/meat.PNG?raw=true"
   },
   {
+    "id": "m2",
     "title": "Chicken Thighs",
     "description": "Brand: Perdue | 600g",
     "price": 4.49,
     "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/meat.PNG?raw=true"
   },
   {
+    "id": "m3",
     "title": "Whole Chicken",
     "description": "Brand: Foster Farms | 1.5kg",
     "price": 9.99,
     "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/meat.PNG?raw=true"
   },
   {
+    "id": "m4",
     "title": "Chicken Wings",
     "description": "Brand: Bell & Evans | 500g",
     "price": 5.99,
     "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/meat.PNG?raw=true"
   },
   {
+    "id": "m5",
     "title": "Ground Chicken",
     "description": "Brand: Tyson | 400g",
     "price": 3.99,
     "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/meat.PNG?raw=true"
   },
   {
+    "id": "m6",
     "title": "Turkey Breast",
     "description": "Brand: Butterball | 600g",
     "price": 6.49,
     "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/meat.PNG?raw=true"
   },
   {
+    "id": "m7",
     "title": "Duck Breast",
     "description": "Brand: Maple Leaf Farms | 450g",
     "price": 8.99,
     "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/meat.PNG?raw=true"
   },
   {
+    "id": "m8",
     "title": "Salmon Fillet",
     "description": "Brand: Norwegian Fresh | 400g",
     "price": 10.99,
     "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/meat.PNG?raw=true"
   },
   {
+    "id": "m9",
     "title": "Tuna Steak",
     "description": "Brand: Ocean's Finest | 300g",
     "price": 12.49,
     "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/meat.PNG?raw=true"
   },
   {
+    "id": "m10",
     "title": "Cod Fillet",
     "description": "Brand: Icelandic Catch | 500g",
     "price": 8.49,
     "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/meat.PNG?raw=true"
   },
   {
+    "id": "m11",
     "title": "Shrimp",
     "description": "Brand: SeaPak | 700g",
     "price": 9.99,
     "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/meat.PNG?raw=true"
   },
   {
+    "id": "m12",
     "title": "Tilapia Fillet",
     "description": "Brand: Regal Springs | 400g",
     "price": 6.99,
     "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/meat.PNG?raw=true"
   },
   {
+    "id": "m13",
     "title": "Scallops",
     "description": "Brand: Bay Fresh | 300g",
     "price": 13.49,
     "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/meat.PNG?raw=true"
   },
   {
+    "id": "m14",
     "title": "Lobster Tail",
     "description": "Brand: Maine Harvest | 250g",
     "price": 19.99,
     "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/meat.PNG?raw=true"
   },
   {
+    "id": "m15",
     "title": "Crab Legs",
     "description": "Brand: Snow King | 1kg",
     "price": 24.99,
     "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/meat.PNG?raw=true"
   },
   {
+    "id": "m16",
     "title": "Turkey Mince",
     "description": "Brand: Butterball | 400g",
     "price": 4.49,
     "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/meat.PNG?raw=true"
   },
   {
+    "id": "m17",
     "title": "Smoked Salmon",
     "description": "Brand: Norwegian Fresh | 200g",
     "price": 8.99,
     "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/meat.PNG?raw=true"
   },
   {
+    "id": "m18",
     "title": "Chicken Sausage",
     "description": "Brand: Aidells | 300g",
     "price": 5.99,
     "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/meat.PNG?raw=true"
   },
   {
+    "id": "m19",
     "title": "Duck Confit",
     "description": "Brand: French Gourmet | 600g",
     "price": 14.99,
     "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/meat.PNG?raw=true"
   },
   {
+    "id": "m20",
     "title": "Halibut Fillet",
     "description": "Brand: Atlantic Harvest | 400g",
     "price": 11.99,
