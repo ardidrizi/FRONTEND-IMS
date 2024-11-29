@@ -1,0 +1,50 @@
+[
+    {
+      "title": "Cucumber",
+      "description": "Category: I | Origin: Spain",
+      "price": 1.99,
+      "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/cucumber.PNG?raw=true"
+    },
+    {
+      "title": "Eggplant",
+      "description": "Category: II | Origin: Italy",
+      "price": 2.49,
+      "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/eggplant.PNG?raw=true"
+    },
+    {
+      "title": "Pepper",
+      "description": "Category: I | Origin: Morocco",
+      "price": 1.89,
+      "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/pepper.PNG?raw=true"
+    },
+    {
+      "title": "Red Onion",
+      "description": "Category: II | Origin: Spain",
+      "price": 1.29,
+      "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/redonion.PNG?raw=true"
+    },
+    {
+      "title": "Tomatoes Grape",
+      "description": "Category: I | Origin: Netherlands",
+      "price": 2.99,
+      "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/tomatoesgrape.PNG?raw=true"
+    },
+    {
+      "title": "Tomatoes Heirloom",
+      "description": "Category: II | Origin: France",
+      "price": 3.99,
+      "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/tomatoesherloom.PNG?raw=true"
+    },
+    {
+      "title": "Tomatoes Vine",
+      "description": "Category: I | Origin: Greece",
+      "price": 2.49,
+      "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/tomatoesvine.PNG?raw=true"
+    },
+    {
+      "title": "Zucchini",
+      "description": "Category: II | Origin: Morocco",
+      "price": 1.89,
+      "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/zuchini.PNG?raw=true"
+    }
+  ]
