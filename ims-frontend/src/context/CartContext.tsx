@@ -30,11 +30,9 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
       const existingItem = prevItems.find((cartItem) => cartItem.id === item.id);
 
       if (existingItem) {
-        // Update the quantity of the existing product
+        // Replace the quantity of the existing product
         return prevItems.map((cartItem) =>
-          cartItem.id === item.id
-            ? { ...cartItem, quantity: cartItem.quantity + item.quantity }
-            : cartItem
+          cartItem.id === item.id ? { ...cartItem, quantity: item.quantity } : cartItem
         );
       }
 
@@ -66,3 +64,4 @@ export const useCart = () => {
   }
   return context;
 };
+
