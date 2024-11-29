@@ -19,9 +19,9 @@ const App: React.FC = () => {
   const isAdminRoute = location.pathname.startsWith('/admin');
 
   return (
-    <div>
+    <div className="min-h-screen bg-white">
       {isAdminRoute && <Navbar isLoggedIn={isLoggedIn} toggleAuth={toggleAuth} />}
-      <div className={isAdminRoute ? 'pt-16' : ''}>
+      <div className={isAdminRoute ? 'max-w-7xl mx-auto pt-16 px-4 sm:px-6 lg:px-8' : 'max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'}>
         <Routes>
           {/* Admin Routes */}
           <Route path="/admin/dashboard" element={<Dashboard />} />
@@ -29,10 +29,10 @@ const App: React.FC = () => {
           <Route path="/admin/suppliers" element={<Suppliers />} />
           <Route path="/admin/login" element={<Login login={() => setIsLoggedIn(true)} />} />
           <Route path="/admin/signup" element={<Signup />} />
+
+          {/* Supermarket Routes */}
           <Route path="/supermarket" element={<SupermarketPage />} />
           <Route path="/supermarket/fruits" element={<FruitsPage />} />
-
-
         </Routes>
       </div>
     </div>
@@ -40,7 +40,6 @@ const App: React.FC = () => {
 };
 
 export default App;
-
 
 
 
