@@ -7,17 +7,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#1f2937', // Dark gray
-        accent: '#f5f5f7', // Soft white
-        highlight: '#007aff', // Apple blue
+        primary: '#1f2937', // Gris oscuro
+        accent: '#f5f5f7', // Blanco suave
+        highlight: '#007aff', // Azul Apple
       },
       fontFamily: {
         sans: ['-apple-system', 'Helvetica Neue', 'Arial', 'sans-serif'],
       },
     },
   },
-  plugins: [
-    require('@tailwindcss/aspect-ratio'), // Add Aspect Ratio Plugin
-  ],
+  plugins: [],
 };
-
