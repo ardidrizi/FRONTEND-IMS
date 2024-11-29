@@ -18,6 +18,7 @@ model Product {
   supplierId    Int
   createdAt     DateTime        @default(now())
   updatedAt     DateTime        @updatedAt
+  picture       String
   category      Category        @relation(fields: [categoryId], references: [id])
   supplier      Supplier        @relation(fields: [supplierId], references: [id])
   StockMovement StockMovement[]
@@ -50,4 +51,12 @@ model StockMovement {
   type            String
   date            DateTime @default(now())
   product         Product  @relation(fields: [productId], references: [id])
+}
+
+model User {
+  id       Int    @id @default(autoincrement())
+  name     String
+  surname  String
+  email    String @unique
+  password String
 }
