@@ -1,31 +1,34 @@
 import React from 'react';
 import Header from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
+import { useNavigate } from 'react-router-dom';
 
 const categories = [
   { name: 'Discounts', image: '/src/assets/images/categories/discounts.png' },
   { name: 'Fruits', image: '/src/assets/images/categories/fruits.png' },
   { name: 'Vegetables', image: '/src/assets/images/categories/vegetables.png' },
-  { name: 'Dairy & Eggs', image: '/src/assets/images/categories/dairy.png' },
-  { name: 'Meat & Fish', image: '/src/assets/images/categories/meat.png' },
-  { name: 'Oil, Vinegar & Condiments', image: '/src/assets/images/categories/oil.png' },
-  { name: 'Legumes, Pasta & Misc.', image: '/src/assets/images/categories/legumes.png' },
-  { name: 'Coffee, Cereals & Sweets', image: '/src/assets/images/categories/coffee.png' },
-  { name: 'Fresh & Ready', image: '/src/assets/images/categories/fresh.png' },
-  { name: 'Aufschnitt & Brotaufstriche', image: '/src/assets/images/categories/coldcuts.png' },
+  { name: 'Dairy', image: '/src/assets/images/categories/dairy.png' },
+  { name: 'Meat', image: '/src/assets/images/categories/meat.png' },
+  { name: 'Oil', image: '/src/assets/images/categories/oil.png' },
+  { name: 'Legumes', image: '/src/assets/images/categories/legumes.png' },
+  { name: 'Coffee', image: '/src/assets/images/categories/coffee.png' },
+  { name: 'Fresh', image: '/src/assets/images/categories/fresh.png' },
+  { name: 'ColdCuts', image: '/src/assets/images/categories/coldcuts.png' },
   { name: 'Bakery', image: '/src/assets/images/categories/bakery.png' },
-  { name: 'Frozen Foods', image: '/src/assets/images/categories/frozen.png' },
+  { name: 'Frozen', image: '/src/assets/images/categories/frozen.png' },
   { name: 'Snacks', image: '/src/assets/images/categories/snacks.png' },
-  { name: 'Water & Beverages', image: '/src/assets/images/categories/beverages.png' },
+  { name: 'Beverages', image: '/src/assets/images/categories/beverages.png' },
   { name: 'Alcohol', image: '/src/assets/images/categories/alcohol.png' },
-  { name: 'Wine & Beer', image: '/src/assets/images/categories/winebeer.png' },
-  { name: 'Cleaning Supplies', image: '/src/assets/images/categories/cleaning.png' },
-  { name: 'Health & Beauty', image: '/src/assets/images/categories/health.png' },
+  { name: 'WineBeer', image: '/src/assets/images/categories/winebeer.png' },
+  { name: 'Cleaning', image: '/src/assets/images/categories/cleaning.png' },
+  { name: 'Health', image: '/src/assets/images/categories/health.png' },
   { name: 'Baby', image: '/src/assets/images/categories/baby.png' },
-  { name: 'Cat & Dog', image: '/src/assets/images/categories/pets.png' },
+  { name: 'Pets', image: '/src/assets/images/categories/pets.png' },
 ];
 
 const SupermarketPage: React.FC = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="min-h-screen bg-white px-8 py-10">
       <Header />
@@ -34,7 +37,8 @@ const SupermarketPage: React.FC = () => {
         {categories.map((category) => (
           <div
             key={category.name}
-            className="bg-white border border-gray-300 rounded-lg shadow hover:shadow-lg transition"
+            className="bg-white border border-gray-300 rounded-lg shadow hover:shadow-lg transition cursor-pointer"
+            onClick={() => navigate(`/supermarket/${category.name.toLowerCase()}`)}
           >
             <div className="w-full h-48 overflow-hidden flex items-center justify-center">
               <img
@@ -55,4 +59,3 @@ const SupermarketPage: React.FC = () => {
 };
 
 export default SupermarketPage;
-

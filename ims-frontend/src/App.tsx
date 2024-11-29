@@ -7,7 +7,7 @@ import Suppliers from './pages/Suppliers';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import SupermarketPage from './pages/SupermarketPage';
-import FruitsPage from './pages/categories/FruitsPage';
+import CategoryPage from './pages/CategoryPage';
 
 const App: React.FC = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -32,7 +32,7 @@ const App: React.FC = () => {
 
           {/* Supermarket Routes */}
           <Route path="/supermarket" element={<SupermarketPage />} />
-          <Route path="/supermarket/fruits" element={<FruitsPage />} />
+          <Route path="/supermarket/:category" element={<CategoryPage />} />
         </Routes>
       </div>
     </div>
@@ -40,6 +40,7 @@ const App: React.FC = () => {
 };
 
 export default App;
+
 
 
 
