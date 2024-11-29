@@ -9,6 +9,8 @@ import LoginUserPage from './pages/LoginUserPage';
 import SignUserPage from './pages/SignUserPage';
 import SupermarketPage from './pages/SupermarketPage';
 import CategoryPage from './pages/CategoryPage';
+import CartPage from './pages/CartPage'; // Importar CartPage
+import { CartProvider } from './context/CartContext'; // Importar CartProvider
 
 const App: React.FC = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -45,6 +47,7 @@ const App: React.FC = () => {
           {/* Supermarket Routes */}
           <Route path="/supermarket" element={<SupermarketPage />} />
           <Route path="/supermarket/:category" element={<CategoryPage />} />
+          <Route path="/supermarket/cart" element={<CartPage />} />
 
           {/* Authentication Routes */}
           <Route path="/login" element={<LoginUserPage />} />
