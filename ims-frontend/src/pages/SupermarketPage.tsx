@@ -1,29 +1,28 @@
 import React from 'react';
-import Header from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
 import { useNavigate } from 'react-router-dom';
 
 const categories = [
-  { name: 'Discounts', image: '/src/assets/images/categories/discounts.png' },
-  { name: 'Fruits', image: '/src/assets/images/categories/fruits.png' },
-  { name: 'Vegetables', image: '/src/assets/images/categories/vegetables.png' },
-  { name: 'Dairy', image: '/src/assets/images/categories/dairy.png' },
-  { name: 'Meat', image: '/src/assets/images/categories/meat.png' },
-  { name: 'Oil', image: '/src/assets/images/categories/oil.png' },
-  { name: 'Legumes', image: '/src/assets/images/categories/legumes.png' },
-  { name: 'Coffee', image: '/src/assets/images/categories/coffee.png' },
-  { name: 'Fresh', image: '/src/assets/images/categories/fresh.png' },
-  { name: 'ColdCuts', image: '/src/assets/images/categories/coldcuts.png' },
-  { name: 'Bakery', image: '/src/assets/images/categories/bakery.png' },
-  { name: 'Frozen', image: '/src/assets/images/categories/frozen.png' },
-  { name: 'Snacks', image: '/src/assets/images/categories/snacks.png' },
-  { name: 'Beverages', image: '/src/assets/images/categories/beverages.png' },
-  { name: 'Alcohol', image: '/src/assets/images/categories/alcohol.png' },
-  { name: 'WineBeer', image: '/src/assets/images/categories/winebeer.png' },
-  { name: 'Cleaning', image: '/src/assets/images/categories/cleaning.png' },
-  { name: 'Health', image: '/src/assets/images/categories/health.png' },
-  { name: 'Baby', image: '/src/assets/images/categories/baby.png' },
-  { name: 'Pets', image: '/src/assets/images/categories/pets.png' },
+  { name: 'Discounts', displayName: 'Discounts & Offers', image: '/src/assets/images/categories/discounts.png' },
+  { name: 'Fruits', displayName: 'Fresh Fruits', image: '/src/assets/images/categories/fruits.png' },
+  { name: 'Vegetables', displayName: 'Healthy Vegetables', image: '/src/assets/images/categories/vegetables.png' },
+  { name: 'Dairy', displayName: 'Dairy Products', image: '/src/assets/images/categories/dairy.png' },
+  { name: 'Meat', displayName: 'Poultry & Fish', image: '/src/assets/images/categories/meat.png' },
+  { name: 'Oil', displayName: 'Cooking Oils', image: '/src/assets/images/categories/oil.png' },
+  { name: 'Legumes', displayName: 'Beans & Legumes', image: '/src/assets/images/categories/legumes.png' },
+  { name: 'Coffee', displayName: 'Coffee & Beverages', image: '/src/assets/images/categories/coffee.png' },
+  { name: 'Fresh', displayName: 'Fresh Produce', image: '/src/assets/images/categories/fresh.png' },
+  { name: 'ColdCuts', displayName: 'Cold Cuts & Deli', image: '/src/assets/images/categories/coldcuts.png' },
+  { name: 'Bakery', displayName: 'Bakery Items', image: '/src/assets/images/categories/bakery.png' },
+  { name: 'Frozen', displayName: 'Frozen Foods', image: '/src/assets/images/categories/frozen.png' },
+  { name: 'Snacks', displayName: 'Snacks & Treats', image: '/src/assets/images/categories/snacks.png' },
+  { name: 'Beverages', displayName: 'Soft Drinks & Juices', image: '/src/assets/images/categories/beverages.png' },
+  { name: 'Alcohol', displayName: 'Alcoholic Beverages', image: '/src/assets/images/categories/alcohol.png' },
+  { name: 'WineBeer', displayName: 'Wines & Beers', image: '/src/assets/images/categories/winebeer.png' },
+  { name: 'Cleaning', displayName: 'Cleaning Supplies', image: '/src/assets/images/categories/cleaning.png' },
+  { name: 'Health', displayName: 'Health & Wellness', image: '/src/assets/images/categories/health.png' },
+  { name: 'Baby', displayName: 'Baby Products', image: '/src/assets/images/categories/baby.png' },
+  { name: 'Pets', displayName: 'Pet Supplies', image: '/src/assets/images/categories/pets.png' },
 ];
 
 const SupermarketPage: React.FC = () => {
@@ -47,7 +46,7 @@ const SupermarketPage: React.FC = () => {
               />
             </div>
             <div className="p-4 text-center">
-              <h2 className="text-lg font-semibold text-gray-800">{category.name}</h2>
+              <h2 className="text-lg font-semibold text-gray-800">{category.displayName}</h2>
             </div>
           </div>
         ))}
