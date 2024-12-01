@@ -34,8 +34,23 @@ const LoginUserPage: React.FC = () => {
       ></video>
 
       {/* Form Container */}
-      <div className="relative max-w-md w-full p-6 bg-white bg-opacity-50 rounded-lg shadow-lg">
-        <h2 className="text-2xl font-semibold text-center mb-6">Log In</h2>
+      <div
+        className="relative max-w-md w-full p-6 bg-white bg-opacity-50 rounded-lg shadow-lg animate-fade-in"
+        style={{
+          backdropFilter: 'blur(10px)', // Efecto de desenfoque
+        }}
+      >
+        <h2
+          className="text-2xl font-semibold text-center text-[#199aaf] mb-6"
+          style={{
+            textShadow: '0 1px 1px rgba(0, 0, 0, 0.1)', // Contorno sutil
+            WebkitFontSmoothing: 'antialiased',
+            MozOsxFontSmoothing: 'grayscale',
+            textRendering: 'optimizeLegibility',
+          }}
+        >
+          Log In
+        </h2>
         {error && <p className="text-red-500 text-center mb-4">{error}</p>}
         <form onSubmit={handleSubmit} className="space-y-4">
           <input
@@ -71,6 +86,26 @@ const LoginUserPage: React.FC = () => {
           </div>
         </form>
       </div>
+
+      {/* Animación de entrada */}
+      <style>
+        {`
+          @keyframes fade-in {
+            from {
+              opacity: 0;
+              transform: translateY(20px);
+            }
+            to {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+
+          .animate-fade-in {
+            animation: fade-in 1s ease-in-out;
+          }
+        `}
+      </style>
     </div>
   );
 };

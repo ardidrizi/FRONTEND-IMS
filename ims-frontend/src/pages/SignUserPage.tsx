@@ -42,7 +42,7 @@ const SignUserPage: React.FC = () => {
         loop
         muted
         className="absolute left-1/2 top-0 transform -translate-x-1/2 w-[200vw] h-full object-cover"
-        //src="https://videos.pexels.com/video-files/856760/856760-hd_1920_1080_25fps.mp4"
+        // src="https://videos.pexels.com/video-files/856760/856760-hd_1920_1080_25fps.mp4"
       ></video>
 
       {/* Transparent Overlay */}
@@ -50,19 +50,19 @@ const SignUserPage: React.FC = () => {
 
       {/* Form Container */}
       <div
-        className="relative max-w-md w-full p-6 rounded-lg shadow-lg z-10"
+        className="relative max-w-md w-full p-6 rounded-lg shadow-lg z-10 animate-fade-in"
         style={{
-          backgroundColor: "rgba(255, 255, 255, 0.2)", // Blanco casi transparente
-          backdropFilter: "blur(10px)", // Efecto de desenfoque para mayor legibilidad
+          backgroundColor: 'rgba(255, 255, 255, 0.2)', // Blanco casi transparente
+          backdropFilter: 'blur(10px)', // Efecto de desenfoque para mayor legibilidad
         }}
       >
         <h2
           className="text-2xl font-semibold text-center text-[#199aaf] mb-6"
           style={{
-            textShadow: "0 1px 1px rgba(0, 0, 0, 0.1)", // Agrega un leve contorno para resaltar el texto
-            WebkitFontSmoothing: "antialiased", // Mejora la nitidez en navegadores WebKit
-            MozOsxFontSmoothing: "grayscale", // Mejora la nitidez en Firefox
-            textRendering: "optimizeLegibility", // Fuerza un renderizado más claro del texto
+            textShadow: '0 1px 1px rgba(0, 0, 0, 0.1)', // Agrega un leve contorno para resaltar el texto
+            WebkitFontSmoothing: 'antialiased', // Mejora la nitidez en navegadores WebKit
+            MozOsxFontSmoothing: 'grayscale', // Mejora la nitidez en Firefox
+            textRendering: 'optimizeLegibility', // Fuerza un renderizado más claro del texto
           }}
         >
           Create an Account
@@ -122,6 +122,26 @@ const SignUserPage: React.FC = () => {
           </div>
         </form>
       </div>
+
+      {/* Animación de entrada */}
+      <style>
+        {`
+          @keyframes fade-in {
+            from {
+              opacity: 0;
+              transform: translateY(20px);
+            }
+            to {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+
+          .animate-fade-in {
+            animation: fade-in 1s ease-in-out;
+          }
+        `}
+      </style>
     </div>
   );
 };

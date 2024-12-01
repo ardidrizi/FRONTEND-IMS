@@ -1,5 +1,4 @@
 ///src="https://videos.pexels.com/video-files/6869006/6869006-uhd_3840_2160_30fps.mp4"
-
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -53,11 +52,10 @@ const HomePage: React.FC = () => {
             muted
             className="w-full h-auto"
             style={{ objectFit: "cover" }}
-            ///src="https://videos.pexels.com/video-files/6869006/6869006-uhd_3840_2160_30fps.mp4"
+            //src="https://videos.pexels.com/video-files/6869006/6869006-uhd_3840_2160_30fps.mp4"
           ></video>
 
           {/* Subtitle */}
-          
           <div className="absolute top-6 left-1/2 transform -translate-x-1/2 text-center">
             <p
               className="text-xl font-semibold opacity-0 animate-fade-in"
@@ -75,12 +73,12 @@ const HomePage: React.FC = () => {
 
         {/* Floating Postal Code Form */}
         <div
-          className="absolute inset-x-0 mx-auto rounded-lg shadow-md p-4"
+          className="absolute inset-x-0 mx-auto rounded-lg shadow-md p-4 animate-fade-in"
           style={{
             bottom: "2rem",
             width: "200px",
             backgroundColor: "rgba(255, 255, 255, 0.2)",
-            backdropFilter: "blur(8px)",
+            backdropFilter: "blur(10px)", // Desenfoque del fondo
           }}
         >
           <div className="flex flex-col items-center">
@@ -119,12 +117,8 @@ const HomePage: React.FC = () => {
       </main>
 
       {/* Sustainability Section */}
-      <section
-        className="py-4 w-full"
-        style={{
-          backgroundColor: "#cdedfe",
-        }}
-      >
+      {/* Sustainability Section */}
+      <section className="py-4 w-full">
         <div className="flex flex-col items-center w-full">
           <p
             className="text-lg font-medium text-center leading-relaxed"
@@ -151,8 +145,18 @@ const HomePage: React.FC = () => {
       <style>
         {`
           @keyframes fade-in {
-            0% { opacity: 0; }
-            100% { opacity: 1; }
+            from {
+              opacity: 0;
+              transform: translateY(20px);
+            }
+            to {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+
+          .animate-fade-in {
+            animation: fade-in 1s ease-in-out;
           }
         `}
       </style>
