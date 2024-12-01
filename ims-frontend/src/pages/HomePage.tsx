@@ -52,7 +52,7 @@ const HomePage: React.FC = () => {
             muted
             className="w-full h-auto"
             style={{ objectFit: "cover" }}
-            //src="https://videos.pexels.com/video-files/6869006/6869006-uhd_3840_2160_30fps.mp4"
+            src="https://videos.pexels.com/video-files/6869006/6869006-uhd_3840_2160_30fps.mp4"
           ></video>
 
           {/* Subtitle */}
@@ -91,7 +91,7 @@ const HomePage: React.FC = () => {
                 backgroundColor: "rgba(255, 255, 255, 0.4)",
                 fontSize: "0.9rem",
               }}
-              className="w-full px-2 py-1 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-800 mb-2 text-center"
+              className="w-full px-2 py-1 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:[#199aaf] text-gray-800 mb-2 text-center"
             />
             <button
               onClick={handlePostalCodeCheck}
@@ -117,7 +117,6 @@ const HomePage: React.FC = () => {
       </main>
 
       {/* Sustainability Section */}
-      {/* Sustainability Section */}
       <section className="py-4 w-full">
         <div className="flex flex-col items-center w-full">
           <p
@@ -137,7 +136,12 @@ const HomePage: React.FC = () => {
         className="text-white py-2 w-full"
       >
         <div className="text-center w-full">
-          <p className="text-sm">&copy; 2024 FastGroceries. All rights reserved.</p>
+          <p
+            className="text-sm cursor-pointer"
+            onClick={() => navigate("/admin/login")}
+          >
+            &copy; 2024 FastGroceries. All rights reserved.
+          </p>
         </div>
       </footer>
 
@@ -165,3 +169,4 @@ const HomePage: React.FC = () => {
 };
 
 export default HomePage;
+

@@ -14,7 +14,7 @@ interface GenericCardProps {
 }
 
 const GenericCard: React.FC<GenericCardProps> = ({ product }) => {
-  const { cartItems, addToCart } = useContext(CartContext);
+  const { cartItems, addToCart, removeFromCart } = useContext(CartContext);
   const [quantity, setQuantity] = useState(0);
   const [showControls, setShowControls] = useState(false);
 
@@ -22,34 +22,53 @@ const GenericCard: React.FC<GenericCardProps> = ({ product }) => {
     const existingItem = cartItems.find((item) => item.id === product.id);
     if (existingItem) {
       setQuantity(existingItem.quantity);
-      setShowControls(true); // Show controls if the item is in the cart
+      setShowControls(true); // Mostrar controles si el producto está en el carrito
+    } else {
+      setQuantity(0);
+      setShowControls(false); // Ocultar controles si el producto no está en el carrito
     }
   }, [cartItems, product.id]);
 
-  useEffect(() => {
-    handleAddOrUpdateCart();
-  }, [quantity]);
+  const handleIncrease = () => {
+    const newQuantity = quantity + 1;
+    setQuantity(newQuantity);
+    addToCart({
+      id: product.id,
+      title: product.title,
+      price: product.price,
+      image: product.image,
+      quantity: newQuantity,
+    });
+  };
 
-  const handleIncrease = () => setQuantity((prev) => prev + 1);
-  const handleDecrease = () => setQuantity((prev) => Math.max(prev - 1, 0));
-
-  const handleAddOrUpdateCart = () => {
-    if (quantity > 0) {
+  const handleDecrease = () => {
+    if (quantity > 1) {
+      const newQuantity = quantity - 1;
+      setQuantity(newQuantity);
       addToCart({
         id: product.id,
         title: product.title,
         price: product.price,
         image: product.image,
-        quantity,
+        quantity: newQuantity,
       });
+    } else {
+      setQuantity(0);
+      setShowControls(false); // Ocultar controles cuando la cantidad llegue a 0
+      removeFromCart(product.id); // Eliminar el producto del carrito
     }
   };
 
   const handleShowControls = () => {
     setShowControls(true);
-    if (quantity === 0) {
-      setQuantity(1); // Start with quantity 1 when controls are shown
-    }
+    setQuantity(1); // Inicia con cantidad 1 al mostrar controles
+    addToCart({
+      id: product.id,
+      title: product.title,
+      price: product.price,
+      image: product.image,
+      quantity: 1,
+    });
   };
 
   return (
@@ -92,3 +111,4 @@ const GenericCard: React.FC<GenericCardProps> = ({ product }) => {
 };
 
 export default GenericCard;
+
