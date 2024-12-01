@@ -29,21 +29,21 @@ const CartPage: React.FC = () => {
                 <div className="ml-4">
                   <h2 className="text-lg font-semibold text-gray-800">{item.title}</h2>
                   <p className="text-gray-600">
-                    ${item.price.toFixed(2)} x {item.quantity}
+                    {item.price.toFixed(2)}€ x {item.quantity}
                   </p>
                 </div>
               </div>
               <button
                 onClick={() => removeFromCart(item.id)}
-                className="text-red-500 hover:text-red-700 font-semibold"
+                className="text-[#3ed7d7] hover:text-[#199aaf] font-semibold"
               >
                 Remove
               </button>
             </div>
           ))}
           <div className="text-right mt-6">
-            <h2 className="text-2xl font-bold">Total: ${getTotalPrice()}</h2>
-            <button className="bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-700 transition">
+            <h2 className="text-2xl font-bold">Total: {getTotalPrice()}€</h2>
+            <button className="text-[#3ed7d7] hover:text-[#199aaf] font-semibold">
               Checkout
             </button>
           </div>

@@ -13,7 +13,7 @@ const NavbarSupermarket: React.FC = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div>
-            <Link to="/supermarket">
+            <Link to="/">
               <img
                 src="../public/images/logo.png"
                 alt="Supermarket Logo"
@@ -25,7 +25,7 @@ const NavbarSupermarket: React.FC = () => {
           {/* Links */}
           <div className="flex items-center space-x-8">
             <Link
-              to="/"
+              to="/supermarket"
               className="hover:text-white transition"
               style={{ color: '#cdedfe' }}
             >
