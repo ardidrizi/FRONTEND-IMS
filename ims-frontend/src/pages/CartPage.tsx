@@ -62,7 +62,7 @@ const CartPage: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-white px-8 py-10 relative">
-      <h1 className="text-3xl font-bold text-gray-800 mb-8">Your Cart</h1>
+      <h1 className="text-3xl font-bold text-gray-800 mb-8">    </h1>
       {cartItems.length === 0 ? (
         <p className="text-gray-700">Your cart is empty!</p>
       ) : (
