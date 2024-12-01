@@ -42,7 +42,8 @@ const SignUserPage: React.FC = () => {
         loop
         muted
         className="absolute left-1/2 top-0 transform -translate-x-1/2 w-[200vw] h-full object-cover"
-        // src="https://videos.pexels.com/video-files/856760/856760-hd_1920_1080_25fps.mp4"
+        //src="https://videos.pexels.com/video-files/856760/856760-hd_1920_1080_25fps.mp4"
+        src='https://videos.pexels.com/video-files/3209013/3209013-uhd_3840_2160_25fps.mp4'
       ></video>
 
       {/* Transparent Overlay */}

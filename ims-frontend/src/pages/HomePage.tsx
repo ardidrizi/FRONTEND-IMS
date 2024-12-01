@@ -52,7 +52,7 @@ const HomePage: React.FC = () => {
             muted
             className="w-full h-auto"
             style={{ objectFit: "cover" }}
-            //src="https://videos.pexels.com/video-files/6869006/6869006-uhd_3840_2160_30fps.mp4"
+            src="https://videos.pexels.com/video-files/6869006/6869006-uhd_3840_2160_30fps.mp4"
           ></video>
 
           {/* Subtitle */}
