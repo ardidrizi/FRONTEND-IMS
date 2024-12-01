@@ -21,8 +21,16 @@ const Products: React.FC = () => {
   }, []);
 
   return (
-    <div className="pt-16 bg-accent min-h-screen">
-      <div className="max-w-7xl mx-auto px-4">
+    <div
+      className="min-h-screen"
+      style={{
+        backgroundImage: `url('/images/fastlogo.png')`, // Ruta de la imagen
+        backgroundSize: 'cover', // Asegura que cubra el fondo completo
+        backgroundPosition: 'center', // Centra la imagen
+        backgroundRepeat: 'no-repeat', // Evita que se repita
+      }}
+    >
+      <div className="pt-16 max-w-7xl mx-auto px-4">
         <h1 className="text-3xl font-bold text-primary mb-8">Products</h1>
         <table className="min-w-full bg-white shadow rounded-lg">
           <thead>
@@ -52,4 +60,3 @@ const Products: React.FC = () => {
 };
 
 export default Products;
-

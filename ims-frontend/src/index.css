@@ -1,43 +1,89 @@
+/* Tailwind base styles */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Variables globales */
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(33, 53, 71, 1); /* Azul oscuro */
-  background-color: #ffffff; /* Fondo blanco */
+  color: #199aaf; /* Azul oscuro */
+  background-color: #cdedfe; /* Azul clarito */
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Ajustes de links */
 a {
   font-weight: 500;
-  color: #007aff; /* Azul Apple */
+  color: #199aaf; /* Azul oscuro */
   text-decoration: inherit;
 }
 a:hover {
-  color: #0056b3; /* Azul más oscuro */
+  color: #3ed7d7; /* Azul tipo turquesa */
 }
 
-body {
+/* Asegurar que body ocupe todo el ancho */
+html, body {
   margin: 0;
   padding: 0;
+  width: 100%; /* Asegura que ocupe todo el ancho */
+  height: 100%; /* Asegura que ocupe todo el alto */
+  overflow-x: hidden; /* Evita scroll horizontal */
+  background-color: #cdedfe; /* Azul clarito */
+  min-width: 320px; /* Mínimo para pantallas pequeñas */
   box-sizing: border-box;
-  background-color: #ffffff; /* Fondo blanco */
-  min-width: 320px;
+}
+
+/* Contenedor principal (#root) */
+#root {
+  width: 100%; /* Todo el ancho de la pantalla */
+  height: 100%; /* Todo el alto de la pantalla */
+  margin: 0; /* Sin márgenes */
+  padding: 0; /* Sin relleno */
+  overflow-x: hidden; /* Evitar scroll horizontal */
+}
+
+/* Ajustes para contenedores */
+.container {
+  width: 100%; /* Ocupa todo el ancho disponible */
+  max-width: 100%; /* Sin límites */
+  padding: 0; /* Sin relleno adicional */
+}
+
+/* Elementos principales (header, main, footer, section) */
+section, header, footer, main {
+  width: 100%; /* Asegúrate de que ocupen todo el ancho */
+}
+
+/* Estilo de títulos */
+h1, h2, h3, h4, h5, h6 {
+  color: #199aaf; /* Azul oscuro */
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  font-weight: bold;
 }
 
+/* Botones */
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -45,29 +91,89 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #007aff; /* Azul Apple */
+  background-color: #199aaf; /* Azul oscuro */
   color: white;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 button:hover {
-  background-color: #0056b3; /* Azul más oscuro */
+  background-color: #7dcdcd; /* Azul tipo turquesa */
 }
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #0056b3;
-  }
-  button {
-    background-color: #007aff;
-  }
+/* Inputs y áreas de texto */
+input, textarea {
+  border-radius: 8px;
+  border: 1px solid #3ed7d7; /* Azul tipo turquesa */
+  padding: 0.6em 1em;
+  font-size: 1em;
+  font-family: inherit;
+  background-color: #cdedfe; /* Azul clarito */
+  color: #199aaf; /* Azul oscuro */
+  transition: all 0.3s ease;
 }
 
+input::placeholder, textarea::placeholder {
+  color: #3ed7d7; /* Azul tipo turquesa */
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #199aaf; /* Azul oscuro */
+  background-color: #ffffff; /* Fondo blanco */
+}
+
+/* Tarjetas */
+.card {
+  background-color: #ffffff; /* Fondo blanco */
+  color: #199aaf; /* Azul oscuro */
+  border: 1px solid #3ed7d7; /* Azul tipo turquesa */
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2em;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer */
+footer {
+  background-color: #199aaf; /* Azul oscuro */
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+footer a {
+  color: #3ed7d7; /* Azul tipo turquesa */
+  text-decoration: underline;
+}
+
+/* Configuración de temas */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #199aaf; /* Azul oscuro */
+    background-color: #cdedfe; /* Azul clarito */
+  }
+
+  button {
+    background-color: #199aaf;
+    color: white;
+  }
+
+  input, textarea {
+    background-color: #cdedfe; /* Azul clarito */
+    color: #199aaf;
+    border-color: #3ed7d7; /* Azul tipo turquesa */
+  }
+
+  input:focus, textarea:focus {
+    background-color: #ffffff; /* Fondo blanco */
+    border-color: #199aaf; /* Azul oscuro */
+  }
+}

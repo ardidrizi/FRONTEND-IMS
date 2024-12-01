@@ -7,9 +7,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#1f2937', // Gris oscuro
-        accent: '#f5f5f7', // Blanco suave
-        highlight: '#007aff', // Azul Apple
+        primary: '#199aaf', // azul osc turquesa
+        accent: '#cdedfe', // azul claro
+        highlight: '#3ed7d7', // Azul turquesa intenso
         skyblue: '#87ceeb', // Azul cielo bonito
       },
       fontFamily: {
