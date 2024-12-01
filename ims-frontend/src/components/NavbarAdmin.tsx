@@ -12,24 +12,49 @@ const NavbarAdmin: React.FC<NavbarProps> = ({ isLoggedIn, toggleAuth }) => {
   return (
     <nav className="fixed top-0 left-0 w-full bg-primary text-white shadow-md z-50">
       <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
-        {/* Logo or Title */}
-        <h1 className="text-2xl font-bold tracking-tight">IMS Admin</h1>
+        {/* Logo Button for Supermarket */}
+        <div>
+          <Link to="/supermarket">
+            <img
+              src="../public/images/logo.png"
+              alt="Supermarket Logo"
+              className="h-14" /* Cambiado a un tamaño más grande */
+            />
+          </Link>
+        </div>
 
         {/* Navigation Links */}
         <ul className="flex items-center space-x-6">
           <li>
-            <Link to="/admin/dashboard" className="hover:text-highlight transition">
+            <Link
+              to="/admin/dashboard"
+              className="text-[#cdedfe] hover:text-highlight transition"
+            >
               Dashboard
             </Link>
           </li>
           <li>
-            <Link to="/admin/products" className="hover:text-highlight transition">
+            <Link
+              to="/admin/products"
+              className="text-[#cdedfe] hover:text-highlight transition"
+            >
               Products
             </Link>
           </li>
           <li>
-            <Link to="/admin/suppliers" className="hover:text-highlight transition">
+            <Link
+              to="/admin/suppliers"
+              className="text-[#cdedfe] hover:text-highlight transition"
+            >
               Suppliers
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/admin/orders"
+              className="text-[#cdedfe] hover:text-highlight transition"
+            >
+              Orders
             </Link>
           </li>
         </ul>
@@ -45,7 +70,7 @@ const NavbarAdmin: React.FC<NavbarProps> = ({ isLoggedIn, toggleAuth }) => {
               <li>
                 <button
                   onClick={toggleAuth}
-                  className="bg-red-500 px-4 py-2 rounded text-white hover:bg-red-600 transition"
+                  className="bg-[#3ed7d7] text-white px-4 py-2 rounded hover:bg-red-500 transition"
                 >
                   Logoff
                 </button>

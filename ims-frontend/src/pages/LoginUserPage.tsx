@@ -33,7 +33,7 @@ const LoginUserPage: React.FC = () => {
         loop
         muted
         className="absolute left-0 top-0 w-full h-full object-cover"
-        src = 'https://videos.pexels.com/video-files/855135/855135-hd_1280_720_24fps.mp4'
+        //src = 'https://videos.pexels.com/video-files/855135/855135-hd_1280_720_24fps.mp4'
       ></video>
 
       {/* Form Container */}

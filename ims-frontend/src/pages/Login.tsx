@@ -22,9 +22,32 @@ const Login: React.FC<LoginProps> = ({ login }) => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-[#cdedfe]">
-      <div className="bg-white shadow-lg rounded-lg p-8 max-w-md w-full">
-        <h2 className="text-2xl font-bold mb-4 text-[#199aaf]">Log In</h2>
+    <div
+      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      style={{
+        backgroundImage: `url('/images/fastlogo.png')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
+    >
+      {/* Form Container */}
+      <div
+        className="relative bg-white shadow-lg rounded-lg p-8 max-w-md w-full animate-fade-in"
+        style={{
+          backdropFilter: 'blur(10px)', // Efecto de desenfoque opcional
+        }}
+      >
+        <h2
+          className="text-2xl font-bold mb-4 text-[#199aaf]"
+          style={{
+            textShadow: '0 1px 1px rgba(0, 0, 0, 0.1)', // Contorno sutil
+            WebkitFontSmoothing: 'antialiased',
+            MozOsxFontSmoothing: 'grayscale',
+            textRendering: 'optimizeLegibility',
+          }}
+        >
+          Log In
+        </h2>
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
             <label className="block text-[#199aaf]">Email</label>
@@ -48,7 +71,7 @@ const Login: React.FC<LoginProps> = ({ login }) => {
           </div>
           <button
             type="submit"
-            className="w-full bg-[#199aaf] text-white py-2 rounded hover:bg-[#199aaf] transition"
+            className="w-full bg-[#199aaf] text-white py-2 rounded hover:bg-[#3ed7d7] transition"
           >
             Log In
           </button>
@@ -60,6 +83,26 @@ const Login: React.FC<LoginProps> = ({ login }) => {
           </a>
         </p>
       </div>
+
+      {/* Animación de entrada */}
+      <style>
+        {`
+          @keyframes fade-in {
+            from {
+              opacity: 0;
+              transform: translateY(20px);
+            }
+            to {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+
+          .animate-fade-in {
+            animation: fade-in 1s ease-in-out;
+          }
+        `}
+      </style>
     </div>
   );
 };

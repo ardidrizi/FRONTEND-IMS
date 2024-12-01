@@ -5,6 +5,8 @@ import NavbarSupermarket from './components/NavbarSupermarket';
 import Dashboard from './pages/Dashboard';
 import Products from './pages/Products';
 import Suppliers from './pages/Suppliers';
+import Orders from './pages/OrdersPage'
+import Login from './pages/Login'
 import LoginUserPage from './pages/LoginUserPage';
 import SignUserPage from './pages/SignUserPage';
 import HomePage from './pages/HomePage';
@@ -47,8 +49,8 @@ const App: React.FC = () => {
                 <Route path="/admin/dashboard" element={<Dashboard />} />
                 <Route path="/admin/products" element={<Products />} />
                 <Route path="/admin/suppliers" element={<Suppliers />} />
-                <Route path="/admin/login" element={<LoginUserPage />} />
-                <Route path="/admin/signup" element={<SignUserPage />} />
+                <Route path="/admin/login" element={<Login />} />
+                <Route path="/admin/orders" element={<Orders />} />
 
                 {/* Rutas del supermercado */}
                 <Route path="/supermarket" element={<SupermarketPage />} />

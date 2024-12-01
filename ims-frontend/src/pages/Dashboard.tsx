@@ -1,9 +1,19 @@
 import React from 'react';
+import NavbarAdmin from '../components/NavbarAdmin'; // Asegúrate de importar correctamente
 
 const Dashboard: React.FC = () => {
+  const isLoggedIn = true; // O puedes obtenerlo de tu estado global/contexto
+  const toggleAuth = () => {
+    console.log('Logoff clicked'); // Implementa la lógica de cierre de sesión
+  };
+
   return (
-    <div className="pt-16 bg-accent min-h-screen">
-      <div className="max-w-7xl mx-auto px-4">
+    <div className="bg-accent min-h-screen">
+      {/* Navbar */}
+      <NavbarAdmin isLoggedIn={isLoggedIn} toggleAuth={toggleAuth} />
+
+      {/* Dashboard Content */}
+      <div className="pt-16 max-w-7xl mx-auto px-4">
         <h1 className="text-4xl font-bold text-primary mb-8">
           Welcome to IMS Dashboard
         </h1>
@@ -27,4 +37,5 @@ const Dashboard: React.FC = () => {
 };
 
 export default Dashboard;
+
 
