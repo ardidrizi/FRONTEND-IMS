@@ -1,3 +1,5 @@
+        ///src="https://videos.pexels.com/video-files/856760/856760-hd_1920_1080_25fps.mp4"
+        //https://pixabay.com/videos/flower-forget-me-not-spring-162124/
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -33,23 +35,43 @@ const SignUserPage: React.FC = () => {
   };
 
   return (
-    <div
-      className="min-h-screen flex items-center justify-center"
-      style={{
-        backgroundImage:
-          "url('https://live.staticflickr.com/5648/23892352142_81eaf7f41e_b.jpg')",
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-      }}
-    >
-      <div className="max-w-md w-full p-6 bg-white bg-opacity-90 rounded-lg shadow-lg">
-        <h2 className="text-2xl font-semibold text-center mb-6">Create an Account</h2>
+    <div className="relative min-h-screen w-full flex items-center justify-center overflow-hidden">
+      {/* Video Background */}
+      <video
+        autoPlay
+        loop
+        muted
+        className="absolute left-1/2 top-0 transform -translate-x-1/2 w-[200vw] h-full object-cover"
+        //src="https://videos.pexels.com/video-files/856760/856760-hd_1920_1080_25fps.mp4"
+      ></video>
+
+      {/* Transparent Overlay */}
+      <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+
+      {/* Form Container */}
+      <div
+        className="relative max-w-md w-full p-6 rounded-lg shadow-lg z-10"
+        style={{
+          backgroundColor: "rgba(255, 255, 255, 0.2)", // Blanco casi transparente
+          backdropFilter: "blur(10px)", // Efecto de desenfoque para mayor legibilidad
+        }}
+      >
+        <h2
+          className="text-2xl font-semibold text-center text-[#199aaf] mb-6"
+          style={{
+            textShadow: "0 1px 1px rgba(0, 0, 0, 0.1)", // Agrega un leve contorno para resaltar el texto
+            WebkitFontSmoothing: "antialiased", // Mejora la nitidez en navegadores WebKit
+            MozOsxFontSmoothing: "grayscale", // Mejora la nitidez en Firefox
+            textRendering: "optimizeLegibility", // Fuerza un renderizado más claro del texto
+          }}
+        >
+          Create an Account
+        </h2>
         <form onSubmit={handleSubmit} className="space-y-4">
           <input
             type="text"
             placeholder="First Name"
-            className="w-full px-4 py-2 border border-gray-300 rounded-md"
+            className="w-full px-4 py-2 border border-gray-300 rounded-md bg-transparent text-[#199aaf] focus:outline-none focus:ring-2 focus:ring-[#3ed7d7]"
             value={firstName}
             onChange={(e) => setFirstName(e.target.value)}
             required
@@ -57,7 +79,7 @@ const SignUserPage: React.FC = () => {
           <input
             type="text"
             placeholder="Last Name"
-            className="w-full px-4 py-2 border border-gray-300 rounded-md"
+            className="w-full px-4 py-2 border border-gray-300 rounded-md bg-transparent text-[#199aaf] focus:outline-none focus:ring-2 focus:ring-[#3ed7d7]"
             value={lastName}
             onChange={(e) => setLastName(e.target.value)}
             required
@@ -65,7 +87,7 @@ const SignUserPage: React.FC = () => {
           <input
             type="email"
             placeholder="Email"
-            className="w-full px-4 py-2 border border-gray-300 rounded-md"
+            className="w-full px-4 py-2 border border-gray-300 rounded-md bg-transparent text-[#199aaf] focus:outline-none focus:ring-2 focus:ring-[#3ed7d7]"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
@@ -73,7 +95,7 @@ const SignUserPage: React.FC = () => {
           <input
             type="password"
             placeholder="Password"
-            className="w-full px-4 py-2 border border-gray-300 rounded-md"
+            className="w-full px-4 py-2 border border-gray-300 rounded-md bg-transparent text-[#199aaf] focus:outline-none focus:ring-2 focus:ring-[#3ed7d7]"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
@@ -81,20 +103,20 @@ const SignUserPage: React.FC = () => {
           <input
             type="password"
             placeholder="Confirm Password"
-            className="w-full px-4 py-2 border border-gray-300 rounded-md"
+            className="w-full px-4 py-2 border border-gray-300 rounded-md bg-transparent text-[#199aaf] focus:outline-none focus:ring-2 focus:ring-[#3ed7d7]"
             value={confirmPassword}
             onChange={(e) => setConfirmPassword(e.target.value)}
             required
           />
           <button
             type="submit"
-            className="w-full py-2 bg-black text-white rounded-full hover:bg-gray-800 transition-all"
+            className="w-full py-2 bg-[#199aaf] text-white rounded-full hover:bg-[#3ed7d7] transition-all"
           >
             Sign Up
           </button>
           <div className="text-center mt-4">
             <span>Already have an account? </span>
-            <Link to="/login" className="text-black">
+            <Link to="/login" className="text-[#3ed7d7] hover:text-[#199aaf] transition-all">
               Log In
             </Link>
           </div>

@@ -1,3 +1,5 @@
+///src="https://videos.pexels.com/video-files/6869006/6869006-uhd_3840_2160_30fps.mp4"
+
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -18,14 +20,21 @@ const HomePage: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col" style={{ backgroundColor: "#E0F7FA" }}>
+    <div
+      className="min-h-screen flex flex-col w-full"
+      style={{
+        backgroundColor: "#E0F7FA",
+        margin: "0",
+        padding: "0",
+        overflowX: "hidden", // Evita cualquier scroll horizontal
+      }}
+    >
       {/* Header Section */}
       <header
         style={{ backgroundColor: "#199aaf" }}
-        className="text-white py-4 px-4 shadow-lg"
+        className="text-white py-4 px-4 shadow-lg w-full"
       >
-        <div className="max-w-5xl mx-auto text-center">
-          {/* Logo */}
+        <div className="text-center w-full">
           <img
             src="/public/images/logo.png" // Replace with the correct path if necessary
             alt="FastGroceries Logo"
@@ -34,34 +43,44 @@ const HomePage: React.FC = () => {
         </div>
       </header>
 
-      {/* Video Section */}
-      <section className="relative w-full overflow-hidden">
-        {/* Video */}
-        <video
-          autoPlay
-          loop
-          muted
-          className="w-full h-auto"
-          style={{ objectFit: "cover" }}
-          src="https://videos.pexels.com/video-files/6869006/6869006-uhd_3840_2160_30fps.mp4"
-        ></video>
+      {/* Main Content Section */}
+      <main className="flex-grow relative w-full">
+        {/* Video Section */}
+        <section className="relative w-full overflow-hidden">
+          <video
+            autoPlay
+            loop
+            muted
+            className="w-full h-auto"
+            style={{ objectFit: "cover" }}
+            ///src="https://videos.pexels.com/video-files/6869006/6869006-uhd_3840_2160_30fps.mp4"
+          ></video>
 
-        {/* Subtitle with animation */}
-        <div className="absolute top-6 left-1/2 transform -translate-x-1/2 text-center">
-          <p
-            className="text-xl font-semibold text-white opacity-0 animate-fade-in"
-            style={{ animation: "fade-in 2s forwards" }}
-          >
-            You order, we deliver — faster than you can imagine!
-          </p>
-        </div>
+          {/* Subtitle */}
+          
+          <div className="absolute top-6 left-1/2 transform -translate-x-1/2 text-center">
+            <p
+              className="text-xl font-semibold opacity-0 animate-fade-in"
+              style={{
+                background: "linear-gradient(90deg, #ffffff, #d4d4d4, #ffffff)", // Efecto plateado brillante
+                WebkitBackgroundClip: "text", // Clipa el degradado al texto
+                WebkitTextFillColor: "transparent", // Fondo transparente para mostrar el gradiente
+                animation: "fade-in 2s forwards",
+              }}
+            >
+              You order, we deliver — faster than you can imagine!
+            </p>
+          </div>
+        </section>
 
         {/* Floating Postal Code Form */}
         <div
-          className="absolute inset-x-0 bottom-4 mx-auto bg-white bg-opacity-70 rounded-lg shadow-md p-2"
+          className="absolute inset-x-0 mx-auto rounded-lg shadow-md p-4"
           style={{
-            width: "200px", // Adjusted the width of the container to be more narrow
-            transform: "translateY(0%)",
+            bottom: "2rem",
+            width: "200px",
+            backgroundColor: "rgba(255, 255, 255, 0.2)",
+            backdropFilter: "blur(8px)",
           }}
         >
           <div className="flex flex-col items-center">
@@ -71,7 +90,7 @@ const HomePage: React.FC = () => {
               value={postalCode}
               onChange={(e) => setPostalCode(e.target.value)}
               style={{
-                backgroundColor: "rgba(224, 247, 250, 0.6)",
+                backgroundColor: "rgba(255, 255, 255, 0.4)",
                 fontSize: "0.9rem",
               }}
               className="w-full px-2 py-1 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-800 mb-2 text-center"
@@ -97,16 +116,16 @@ const HomePage: React.FC = () => {
             </p>
           )}
         </div>
-      </section>
+      </main>
 
       {/* Sustainability Section */}
       <section
-        className="py-4" // Reduced vertical padding to make the section less tall
+        className="py-4 w-full"
         style={{
-          backgroundColor: "#cdedfe", // Sky blue
+          backgroundColor: "#cdedfe",
         }}
       >
-        <div className="max-w-7xl mx-auto flex flex-col items-center">
+        <div className="flex flex-col items-center w-full">
           <p
             className="text-lg font-medium text-center leading-relaxed"
             style={{ color: "#199aaf" }}
@@ -119,8 +138,11 @@ const HomePage: React.FC = () => {
       </section>
 
       {/* Footer */}
-      <footer style={{ backgroundColor: "#199aaf" }} className="text-white py-4">
-        <div className="max-w-7xl mx-auto text-center">
+      <footer
+        style={{ backgroundColor: "#199aaf" }}
+        className="text-white py-2 w-full"
+      >
+        <div className="text-center w-full">
           <p className="text-sm">&copy; 2024 FastGroceries. All rights reserved.</p>
         </div>
       </footer>

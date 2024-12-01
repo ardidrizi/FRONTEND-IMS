@@ -1,10 +1,9 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  width: 100%; /* Ocupa todo el ancho de la pantalla */
+  margin: 0; /* Elimina el centrado automático */
+  padding: 0; /* Elimina el padding adicional */
+  text-align: center; /* Mantén el texto centrado si es necesario */
 }
-
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -12,10 +11,10 @@
   transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em #3ed7d7); /* Botón destacado */
 }
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  filter: drop-shadow(0 0 2em #199aaf); /* Azul oscuro */
 }
 
 @keyframes logo-spin {
@@ -35,8 +34,11 @@
 
 .card {
   padding: 2em;
+  background-color: #cdedfe; /* Azul clarito */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px #199aaf;
 }
 
 .read-the-docs {
-  color: #888;
+  color: #199aaf; /* Azul oscuro */
 }

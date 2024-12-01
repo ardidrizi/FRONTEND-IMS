@@ -8,27 +8,33 @@ const NavbarSupermarket: React.FC = () => {
   const handleLogout = () => setIsLoggedIn(false);
 
   return (
-    <nav className="bg-white shadow fixed top-0 left-0 w-full z-50">
+    <nav className="shadow fixed top-0 left-0 w-full z-50" style={{ backgroundColor: '#199aaf' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div>
-            <Link to="/supermarket" className="text-2xl font-bold text-blue-600">
-              Supermarket
+            <Link to="/supermarket">
+              <img
+                src="../public/images/logo.png"
+                alt="Supermarket Logo"
+                className="h-14" /* Cambiado a un tamaño más grande */
+              />
             </Link>
           </div>
 
           {/* Links */}
           <div className="flex items-center space-x-8">
             <Link
-              to="/supermarket"
-              className="text-gray-700 hover:text-blue-600 transition"
+              to="/"
+              className="hover:text-white transition"
+              style={{ color: '#cdedfe' }}
             >
               Home
             </Link>
             <Link
               to="/supermarket/cart"
-              className="text-gray-700 hover:text-blue-600 transition"
+              className="hover:text-white transition"
+              style={{ color: '#cdedfe' }}
             >
               Cart
             </Link>
@@ -36,13 +42,18 @@ const NavbarSupermarket: React.FC = () => {
             {/* Auth Section */}
             {isLoggedIn ? (
               <>
-                <Link to="/profile" className="text-gray-700 hover:text-blue-600 transition">
+                <Link
+                  to="/profile"
+                  className="hover:text-white transition"
+                  style={{ color: '#cdedfe' }}
+                >
                   My Profile
                 </Link>
                 <span className="text-green-500">•</span>
                 <button
                   onClick={handleLogout}
-                  className="text-gray-700 hover:text-blue-600 transition"
+                  className="hover:text-white transition"
+                  style={{ color: '#cdedfe' }}
                 >
                   Logoff
                 </button>
@@ -50,7 +61,8 @@ const NavbarSupermarket: React.FC = () => {
             ) : (
               <Link
                 to="/login"
-                className="text-gray-700 hover:text-blue-600 transition"
+                className="hover:text-white transition"
+                style={{ color: '#cdedfe' }}
                 onClick={handleLogin}
               >
                 Login
@@ -64,4 +76,3 @@ const NavbarSupermarket: React.FC = () => {
 };
 
 export default NavbarSupermarket;
-
