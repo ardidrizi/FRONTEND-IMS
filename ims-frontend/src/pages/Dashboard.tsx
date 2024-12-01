@@ -8,7 +8,15 @@ const Dashboard: React.FC = () => {
   };
 
   return (
-    <div className="bg-accent min-h-screen">
+    <div
+      className="min-h-screen"
+      style={{
+        backgroundImage: `url('/images/fastlogo.png')`, // Ruta relativa desde public
+        backgroundSize: 'cover', // Asegura que la imagen cubra todo el fondo
+        backgroundPosition: 'center', // Centra la imagen
+        backgroundRepeat: 'no-repeat', // Evita que se repita
+      }}
+    >
       {/* Navbar */}
       <NavbarAdmin isLoggedIn={isLoggedIn} toggleAuth={toggleAuth} />
 
@@ -37,5 +45,4 @@ const Dashboard: React.FC = () => {
 };
 
 export default Dashboard;
-
 
