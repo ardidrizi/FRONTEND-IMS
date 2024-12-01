@@ -1,11 +1,39 @@
 import React, { useContext } from 'react';
 import { CartContext } from '../context/CartContext';
+import { usePurchase } from '../context/PurchaseContext';
+import { v4 as uuidv4 } from 'uuid';
 
 const CartPage: React.FC = () => {
-  const { cartItems, removeFromCart } = useContext(CartContext);
+  const { cartItems, removeFromCart, clearCart } = useContext(CartContext);
+  const { addPurchase } = usePurchase();
 
   const getTotalPrice = () => {
     return cartItems.reduce((total, item) => total + item.price * item.quantity, 0).toFixed(2);
+  };
+
+  const handleCheckout = () => {
+    if (cartItems.length === 0) {
+      alert('Your cart is empty!');
+      return;
+    }
+
+    const total = parseFloat(getTotalPrice());
+    const purchase = {
+      id: uuidv4(),
+      date: new Date().toLocaleDateString(),
+      items: cartItems.map((item) => ({
+        id: item.id,
+        title: item.title,
+        quantity: item.quantity,
+        price: item.price,
+        image: item.image,
+      })),
+      total,
+    };
+
+    addPurchase(purchase);
+    clearCart(); // Vacía el carrito
+    alert('Purchase completed and saved to your profile!');
   };
 
   return (
@@ -43,7 +71,10 @@ const CartPage: React.FC = () => {
           ))}
           <div className="text-right mt-6">
             <h2 className="text-2xl font-bold">Total: {getTotalPrice()}€</h2>
-            <button className="text-[#3ed7d7] hover:text-[#199aaf] font-semibold">
+            <button
+              onClick={handleCheckout}
+              className="bg-[#199aaf] text-white px-4 py-2 rounded hover:bg-[#3ed7d7] transition-all"
+            >
               Checkout
             </button>
           </div>
