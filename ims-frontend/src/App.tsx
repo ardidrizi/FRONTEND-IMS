@@ -14,6 +14,7 @@ import CartPage from './pages/CartPage';
 import MyProfilePage from './pages/MyProfilePage';
 import { CartProvider } from './context/CartContext';
 import { PurchaseProvider } from './context/PurchaseContext';
+import { AuthProvider } from './context/AuthContext';
 
 const App: React.FC = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -26,43 +27,45 @@ const App: React.FC = () => {
     !location.pathname.startsWith('/admin') && location.pathname !== '/';
 
   return (
-    <CartProvider>
-      <PurchaseProvider>
-        <div className="min-h-screen bg-white">
-          {/* Mostrar navbar según la ruta */}
-          {isNavbarRequired && <NavbarSupermarket />}
+    <AuthProvider>
+      <CartProvider>
+        <PurchaseProvider>
+          <div className="min-h-screen bg-white">
+            {/* Mostrar navbar según la ruta */}
+            {isNavbarRequired && <NavbarSupermarket />}
 
-          {/* Contenido principal */}
-          <div
-            className={
-              location.pathname.startsWith('/admin')
-                ? 'max-w-7xl mx-auto pt-16 px-4 sm:px-6 lg:px-8'
-                : 'max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'
-            }
-          >
-            <Routes>
-              {/* Rutas de Admin */}
-              <Route path="/admin/dashboard" element={<Dashboard />} />
-              <Route path="/admin/products" element={<Products />} />
-              <Route path="/admin/suppliers" element={<Suppliers />} />
-              <Route path="/admin/login" element={<LoginUserPage />} />
-              <Route path="/admin/signup" element={<SignUserPage />} />
+            {/* Contenido principal */}
+            <div
+              className={
+                location.pathname.startsWith('/admin')
+                  ? 'max-w-7xl mx-auto pt-16 px-4 sm:px-6 lg:px-8'
+                  : 'max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'
+              }
+            >
+              <Routes>
+                {/* Rutas de Admin */}
+                <Route path="/admin/dashboard" element={<Dashboard />} />
+                <Route path="/admin/products" element={<Products />} />
+                <Route path="/admin/suppliers" element={<Suppliers />} />
+                <Route path="/admin/login" element={<LoginUserPage />} />
+                <Route path="/admin/signup" element={<SignUserPage />} />
 
-              {/* Rutas del supermercado */}
-              <Route path="/supermarket" element={<SupermarketPage />} />
-              <Route path="/supermarket/:category" element={<CategoryPage />} />
-              <Route path="/supermarket/cart" element={<CartPage />} />
-              <Route path="/profile" element={<MyProfilePage />} />
-              <Route path="/" element={<HomePage />} />
+                {/* Rutas del supermercado */}
+                <Route path="/supermarket" element={<SupermarketPage />} />
+                <Route path="/supermarket/:category" element={<CategoryPage />} />
+                <Route path="/supermarket/cart" element={<CartPage />} />
+                <Route path="/profile" element={<MyProfilePage />} />
+                <Route path="/" element={<HomePage />} />
 
-              {/* Rutas de autenticación */}
-              <Route path="/login" element={<LoginUserPage />} />
-              <Route path="/signup" element={<SignUserPage />} />
-            </Routes>
+                {/* Rutas de autenticación */}
+                <Route path="/login" element={<LoginUserPage />} />
+                <Route path="/signup" element={<SignUserPage />} />
+              </Routes>
+            </div>
           </div>
-        </div>
-      </PurchaseProvider>
-    </CartProvider>
+        </PurchaseProvider>
+      </CartProvider>
+    </AuthProvider>
   );
 };
 

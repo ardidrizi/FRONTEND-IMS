@@ -1,11 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
+import { useAuth } from '../context/AuthContext'; // Importamos el contexto de autenticación
 
 const NavbarSupermarket: React.FC = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-
-  const handleLogin = () => setIsLoggedIn(true);
-  const handleLogout = () => setIsLoggedIn(false);
+  const { isLoggedIn, logout } = useAuth(); // Usamos isLoggedIn y logout del AuthContext
 
   return (
     <nav className="shadow fixed top-0 left-0 w-full z-50" style={{ backgroundColor: '#199aaf' }}>
@@ -51,7 +49,7 @@ const NavbarSupermarket: React.FC = () => {
                 </Link>
                 <span className="text-green-500">•</span>
                 <button
-                  onClick={handleLogout}
+                  onClick={logout}
                   className="hover:text-white transition"
                   style={{ color: '#cdedfe' }}
                 >
@@ -63,7 +61,6 @@ const NavbarSupermarket: React.FC = () => {
                 to="/login"
                 className="hover:text-white transition"
                 style={{ color: '#cdedfe' }}
-                onClick={handleLogin}
               >
                 Login
               </Link>

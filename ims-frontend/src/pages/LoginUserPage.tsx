@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { useAuth } from '../context/AuthContext'; // Importamos el contexto de autenticación
 
 const LoginUserPage: React.FC = () => {
+  const { login } = useAuth(); // Usamos el login del contexto
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
@@ -13,6 +15,7 @@ const LoginUserPage: React.FC = () => {
     try {
       // Simula un login exitoso
       if (email === 'test@example.com' && password === 'password') {
+        login(); // Cambiamos el estado global a autenticado
         navigate('/supermarket'); // Redirige al supermercado tras un login exitoso
       } else {
         throw new Error('Invalid credentials. Please try again.');
@@ -30,7 +33,6 @@ const LoginUserPage: React.FC = () => {
         loop
         muted
         className="absolute left-0 top-0 w-full h-full object-cover"
-        ///src="https://videos.pexels.com/video-files/855135/855135-hd_1280_720_24fps.mp4"
       ></video>
 
       {/* Form Container */}
