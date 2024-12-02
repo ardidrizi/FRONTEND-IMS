@@ -1,23 +1,23 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 interface LoginProps {
   login: () => void;
 }
 
 const Login: React.FC<LoginProps> = ({ login }) => {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
     if (username && password) {
-      login(); // Trigger login function
-      navigate('/admin/dashboard'); // Redirect to Admin Dashboard
+      login(); // Trigger login functionz
+      navigate("/admin/dashboard"); // Redirect to Admin Dashboard
     } else {
-      alert('Please fill in both fields.');
+      alert("Please fill in both fields.");
     }
   };
 
@@ -26,24 +26,24 @@ const Login: React.FC<LoginProps> = ({ login }) => {
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
       style={{
         backgroundImage: `url('/images/fastlogo.png')`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
+        backgroundSize: "cover",
+        backgroundPosition: "center",
       }}
     >
       {/* Form Container */}
       <div
         className="relative bg-white shadow-lg rounded-lg p-8 max-w-md w-full animate-fade-in"
         style={{
-          backdropFilter: 'blur(10px)', // Efecto de desenfoque opcional
+          backdropFilter: "blur(10px)", // Efecto de desenfoque opcional
         }}
       >
         <h2
           className="text-2xl font-bold mb-4 text-[#199aaf]"
           style={{
-            textShadow: '0 1px 1px rgba(0, 0, 0, 0.1)', // Contorno sutil
-            WebkitFontSmoothing: 'antialiased',
-            MozOsxFontSmoothing: 'grayscale',
-            textRendering: 'optimizeLegibility',
+            textShadow: "0 1px 1px rgba(0, 0, 0, 0.1)", // Contorno sutil
+            WebkitFontSmoothing: "antialiased",
+            MozOsxFontSmoothing: "grayscale",
+            textRendering: "optimizeLegibility",
           }}
         >
           Log In
@@ -77,7 +77,7 @@ const Login: React.FC<LoginProps> = ({ login }) => {
           </button>
         </form>
         <p className="mt-4 text-center text-[#199aaf]">
-          Don't have an account?{' '}
+          Don't have an account?{" "}
           <a href="/signup" className="text-[#3ed7d7] underline">
             Sign Up
           </a>

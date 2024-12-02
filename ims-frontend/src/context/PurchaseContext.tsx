@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState } from 'react';
+import React, { createContext, useContext, useState } from "react";
 
 interface Purchase {
   id: string;
@@ -22,7 +22,9 @@ const PurchaseContext = createContext<PurchaseContextType>({
   addPurchase: () => {},
 });
 
-export const PurchaseProvider: React.FC = ({ children }) => {
+export const PurchaseProvider: React.FC<React.PropsWithChildren<unknown>> = ({
+  children,
+}) => {
   const [purchases, setPurchases] = useState<Purchase[]>([]);
 
   const addPurchase = (purchase: Purchase) => {

@@ -7,7 +7,7 @@ import Products from "./pages/Products";
 import Suppliers from "./pages/Suppliers";
 import Orders from "./pages/OrdersPage";
 import Login from "./pages/Login";
-import LoginUserPage from "./pages/LoginUserPage";
+// import LoginUserPage from "./pages/LoginUserPage";
 import SignUserPage from "./pages/SignUserPage";
 import HomePage from "./pages/HomePage";
 import SupermarketPage from "./pages/SupermarketPage";
@@ -17,6 +17,7 @@ import MyProfilePage from "./pages/MyProfilePage";
 import { CartProvider } from "./context/CartContext";
 import { PurchaseProvider } from "./context/PurchaseContext";
 import { AuthProvider } from "./context/AuthContext";
+import LoginComponent from "./components/LoginComponent";
 
 const App: React.FC = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -52,7 +53,10 @@ const App: React.FC = () => {
                 <Route path="/admin/dashboard" element={<Dashboard />} />
                 <Route path="/admin/products" element={<Products />} />
                 <Route path="/admin/suppliers" element={<Suppliers />} />
-                <Route path="/admin/login" element={<Login />} />
+                <Route
+                  path="/admin/login"
+                  element={<Login login={toggleAuth} />}
+                />
                 <Route path="/admin/orders" element={<Orders />} />
 
                 {/* Rutas del supermercado */}
@@ -66,7 +70,7 @@ const App: React.FC = () => {
                 <Route path="/" element={<HomePage />} />
 
                 {/* Rutas de autenticación */}
-                <Route path="/login" element={<LoginUserPage />} />
+                <Route path="/login" element={<LoginComponent />} />
                 <Route path="/signup" element={<SignUserPage />} />
               </Routes>
             </div>
