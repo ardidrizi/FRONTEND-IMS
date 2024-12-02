@@ -1,142 +1,212 @@
 [
   {
-    "id": "d1",
-    "title": "Whole Milk",
-    "description": "Brand: Horizon Organic | 1L",
-    "price": 1.99,
-    "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/dairy.PNG?raw=true"
+    "id": 61,
+    "title": "Fresh Milk",
+    "description": "Brand: Pascual | 1L",
+    "price": 1.49,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/dairy/dairy1.PNG?raw=true"
   },
   {
-    "id": "d2",
-    "title": "Skim Milk",
-    "description": "Brand: Organic Valley | 1L",
-    "price": 1.89,
-    "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/dairy.PNG?raw=true"
+    "id": 62,
+    "title": "Light Fresh Milk",
+    "description": "Brand: Pascual | 1L",
+    "price": 1.59,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/dairy/dairy2.PNG?raw=true"
   },
   {
-    "id": "d3",
-    "title": "Greek Yogurt",
-    "description": "Brand: Chobani | 150g",
-    "price": 0.99,
-    "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/dairy.PNG?raw=true"
+    "id": 63,
+    "title": "0% Milk",
+    "description": "Brand: Pascual | 1L",
+    "price": 1.39,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/dairy/dairy3.PNG?raw=true"
   },
   {
-    "id": "d4",
-    "title": "Butter",
-    "description": "Brand: Lurpak | 250g",
-    "price": 2.49,
-    "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/dairy.PNG?raw=true"
+    "id": 64,
+    "title": "Fresh Milk",
+    "description": "Brand: Pastor | 1L",
+    "price": 1.29,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/dairy/dairy4.PNG?raw=true"
   },
   {
-    "id": "d5",
-    "title": "Cheddar Cheese",
-    "description": "Brand: Tillamook | 200g",
+    "id": 65,
+    "title": "Cheese",
+    "description": "Brand: García Baquero | 200g",
     "price": 3.49,
-    "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/dairy.PNG?raw=true"
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/dairy/dairy5.PNG?raw=true"
   },
   {
-    "id": "d6",
-    "title": "Cream Cheese",
-    "description": "Brand: Philadelphia | 300g",
-    "price": 2.89,
-    "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/dairy.PNG?raw=true"
-  },
-  {
-    "id": "d7",
-    "title": "Mozzarella Cheese",
-    "description": "Brand: Galbani | 125g",
-    "price": 2.19,
-    "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/dairy.PNG?raw=true"
-  },
-  {
-    "id": "d8",
-    "title": "Parmesan Cheese",
-    "description": "Brand: Kraft | 200g",
-    "price": 4.49,
-    "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/dairy.PNG?raw=true"
-  },
-  {
-    "id": "d9",
-    "title": "Cottage Cheese",
-    "description": "Brand: Breakstone's | 400g",
-    "price": 3.29,
-    "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/dairy.PNG?raw=true"
-  },
-  {
-    "id": "d10",
-    "title": "Heavy Cream",
-    "description": "Brand: Land O'Lakes | 500ml",
+    "id": 66,
+    "title": "Cheese",
+    "description": "Brand: Burgos | 300g",
     "price": 2.99,
-    "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/dairy.PNG?raw=true"
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/dairy/dairy6.PNG?raw=true"
   },
   {
-    "id": "d11",
-    "title": "Half and Half",
-    "description": "Brand: Horizon Organic | 500ml",
-    "price": 2.69,
-    "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/dairy.PNG?raw=true"
-  },
-  {
-    "id": "d12",
-    "title": "Swiss Cheese",
-    "description": "Brand: Babybel | 120g",
-    "price": 3.79,
-    "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/dairy.PNG?raw=true"
-  },
-  {
-    "id": "d13",
-    "title": "Ricotta Cheese",
-    "description": "Brand: Galbani | 300g",
-    "price": 3.19,
-    "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/dairy.PNG?raw=true"
-  },
-  {
-    "id": "d14",
+    "id": 67,
     "title": "Feta Cheese",
     "description": "Brand: Dodoni | 200g",
-    "price": 3.99,
-    "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/dairy.PNG?raw=true"
+    "price": 4.99,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/dairy/dairy7.PNG?raw=true"
   },
   {
-    "id": "d15",
-    "title": "Almond Milk",
-    "description": "Brand: Silk | 1L",
+    "id": 68,
+    "title": "Parmigiano Cheese",
+    "description": "Brand: Galbani | 150g",
+    "price": 5.49,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/dairy/dairy8.PNG?raw=true"
+  },
+  {
+    "id": 69,
+    "title": "Butter",
+    "description": "Brand: Asturiana | 250g",
+    "price": 2.49,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/dairy/dairy9.PNG?raw=true"
+  },
+  {
+    "id": 70,
+    "title": "Butter",
+    "description": "Brand: Asturiana | Salted | 250g",
+    "price": 2.59,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/dairy/dairy10.PNG?raw=true"
+  },
+  {
+    "id": 71,
+    "title": "Yogurt",
+    "description": "Brand: Activia | Natural | 4x125g",
     "price": 3.49,
-    "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/dairy.PNG?raw=true"
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/dairy/dairy11.PNG?raw=true"
   },
   {
-    "id": "d16",
-    "title": "Soy Milk",
-    "description": "Brand: Alpro | 1L",
+    "id": 72,
+    "title": "Greek Yogurt",
+    "description": "Brand: Oikos | 150g",
+    "price": 1.79,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/dairy/dairy12.PNG?raw=true"
+  },
+  {
+    "id": 73,
+    "title": "Skimmed Milk",
+    "description": "Brand: Pascual | 1L",
+    "price": 1.29,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/dairy/dairy.PNG?raw=true"
+  },
+  {
+    "id": 74,
+    "title": "Whole Milk",
+    "description": "Brand: Pastor | 1L",
+    "price": 1.19,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/dairy/dairy.PNG?raw=true"
+  },
+  {
+    "id": 75,
+    "title": "Cheddar Cheese",
+    "description": "Brand: Cathedral City | 200g",
+    "price": 3.99,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/dairy/dairy.PNG?raw=true"
+  },
+  {
+    "id": 76,
+    "title": "Mozzarella Cheese",
+    "description": "Brand: Galbani | 250g",
     "price": 2.99,
-    "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/dairy.PNG?raw=true"
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/dairy/dairy.PNG?raw=true"
   },
   {
-    "id": "d17",
-    "title": "Coconut Milk",
-    "description": "Brand: Vita Coco | 1L",
+    "id": 77,
+    "title": "Butter",
+    "description": "Brand: Lurpak | Salted | 250g",
+    "price": 3.49,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/dairy/dairy.PNG?raw=true"
+  },
+  {
+    "id": 78,
+    "title": "Butter",
+    "description": "Brand: Lurpak | Unsalted | 250g",
+    "price": 3.49,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/dairy/dairy.PNG?raw=true"
+  },
+  {
+    "id": 79,
+    "title": "Plain Yogurt",
+    "description": "Brand: Danone | 4x125g",
+    "price": 2.99,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/dairy/dairy.PNG?raw=true"
+  },
+  {
+    "id": 80,
+    "title": "Strawberry Yogurt",
+    "description": "Brand: Activia | 4x125g",
     "price": 3.29,
-    "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/dairy.PNG?raw=true"
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/dairy/dairy.PNG?raw=true"
   },
   {
-    "id": "d18",
+    "id": 81,
+    "title": "Cream Cheese",
+    "description": "Brand: Philadelphia | 200g",
+    "price": 2.79,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/dairy/dairy.PNG?raw=true"
+  },
+  {
+    "id": 82,
+    "title": "Whipping Cream",
+    "description": "Brand: Pascual | 500ml",
+    "price": 2.49,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/dairy/dairy.PNG?raw=true"
+  },
+  {
+    "id": 83,
+    "title": "Sour Cream",
+    "description": "Brand: Lala | 200ml",
+    "price": 1.99,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/dairy/dairy.PNG?raw=true"
+  },
+  {
+    "id": 84,
     "title": "Goat Cheese",
     "description": "Brand: Chavroux | 150g",
-    "price": 3.99,
-    "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/dairy.PNG?raw=true"
+    "price": 4.49,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/dairy/dairy.PNG?raw=true"
   },
   {
-    "id": "d19",
-    "title": "Whipped Cream",
-    "description": "Brand: Reddi-wip | 400ml",
+    "id": 85,
+    "title": "Ricotta Cheese",
+    "description": "Brand: Galbani | 250g",
+    "price": 3.29,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/dairy/dairy.PNG?raw=true"
+  },
+  {
+    "id": 86,
+    "title": "Milk Cream",
+    "description": "Brand: Nestlé | 500ml",
+    "price": 2.99,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/dairy/dairy.PNG?raw=true"
+  },
+  {
+    "id": 87,
+    "title": "Almond Milk",
+    "description": "Brand: Alpro | 1L",
     "price": 2.49,
-    "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/dairy.PNG?raw=true"
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/dairy/dairy.PNG?raw=true"
   },
   {
-    "id": "d20",
-    "title": "Provolone Cheese",
-    "description": "Brand: Sargento | 200g",
-    "price": 3.59,
-    "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/dairy.PNG?raw=true"
+    "id": 88,
+    "title": "Soy Milk",
+    "description": "Brand: Alpro | 1L",
+    "price": 2.29,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/dairy/dairy.PNG?raw=true"
+  },
+  {
+    "id": 89,
+    "title": "Coconut Milk",
+    "description": "Brand: Thai Kitchen | 500ml",
+    "price": 3.49,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/dairy/dairy.PNG?raw=true"
+  },
+  {
+    "id": 90,
+    "title": "Hazelnut Milk",
+    "description": "Brand: Alpro | 1L",
+    "price": 2.79,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/dairy/dairy.PNG?raw=true"
   }
 ]

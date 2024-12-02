@@ -1,0 +1,142 @@
+[
+  {
+    "id": 211,
+    "title": "Cacao",
+    "description": "Brand: Valor | 500g",
+    "price": 4.99,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/cafe/cacao.PNG?raw=true"
+  },
+  {
+    "id": 212,
+    "title": "Cacao",
+    "description": "Brand: Ethiquable | 1kg",
+    "price": 8.49,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/cafe/cacao2.PNG?raw=true"
+  },
+  {
+    "id": 213,
+    "title": "Coffee",
+    "description": "Brand: Lavazza | 250g",
+    "price": 5.49,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/cafe/cafe1.PNG?raw=true"
+  },
+  {
+    "id": 214,
+    "title": "Coffee",
+    "description": "Brand: Bonka | 500g",
+    "price": 7.49,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/cafe/cafe2.PNG?raw=true"
+  },
+  {
+    "id": 215,
+    "title": "Coffee",
+    "description": "Brand: Nescafé | 200g",
+    "price": 6.29,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/cafe/cafe3.PNG?raw=true"
+  },
+  {
+    "id": 216,
+    "title": "Matcha",
+    "description": "Brand: Japanese Matcha | 100g",
+    "price": 9.99,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/cafe/matcha.PNG?raw=true"
+  },
+  {
+    "id": 217,
+    "title": "Honey",
+    "description": "Brand: Pazo de Lusio | 500g",
+    "price": 6.99,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/cafe/miel.PNG?raw=true"
+  },
+  {
+    "id": 218,
+    "title": "Honey",
+    "description": "Brand: Galician Honey | 500g",
+    "price": 7.49,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/cafe/miel2.PNG?raw=true"
+  },
+  {
+    "id": 219,
+    "title": "Tea",
+    "description": "Brand: Clipper | 20 bags",
+    "price": 4.29,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/cafe/te.PNG?raw=true"
+  },
+  {
+    "id": 220,
+    "title": "Tea",
+    "description": "Brand: Clipper | Green Tea | 20 bags",
+    "price": 4.49,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/cafe/te2.PNG?raw=true"
+  },
+  {
+    "id": 221,
+    "title": "Tea",
+    "description": "Brand: Clipper | Chamomile | 20 bags",
+    "price": 4.39,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/cafe/te3.PNG?raw=true"
+  },
+  {
+    "id": 222,
+    "title": "Tea",
+    "description": "Brand: Clipper | 20 bags",
+    "price": 3.49,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/cafe/te4.PNG?raw=true"
+  },
+  {
+    "id": 223,
+    "title": "Cinnamon",
+    "description": "Brand: Ceylon | 200g",
+    "price": 3.99,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/cafe/coffee.PNG?raw=true"
+  },
+  {
+    "id": 224,
+    "title": "Coffee Beans",
+    "description": "Brand: Arabica | 1kg",
+    "price": 15.99,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/cafe/coffee.PNG?raw=true"
+  },
+  {
+    "id": 225,
+    "title": "Hot Chocolate",
+    "description": "Brand: Valor | 1kg",
+    "price": 8.99,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/cafe/coffee.PNG?raw=true"
+  },
+  {
+    "id": 226,
+    "title": "Espresso",
+    "description": "Brand: Lavazza | 250g",
+    "price": 5.99,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/cafe/coffee.PNG?raw=true"
+  },
+  {
+    "id": 227,
+    "title": "Green Tea",
+    "description": "Brand: Twinings | 50 bags",
+    "price": 6.49,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/cafe/coffee.PNG?raw=true"
+  },
+  {
+    "id": 228,
+    "title": "Organic Coffee",
+    "description": "Brand: Lavazza | 1kg",
+    "price": 14.99,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/cafe/coffee.PNG?raw=true"
+  },
+  {
+    "id": 229,
+    "title": "Cocoa Powder",
+    "description": "Brand: Cadbury | 500g",
+    "price": 7.49,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/cafe/coffee.PNG?raw=true"
+  },
+  {
+    "id": 230,
+    "title": "Honey",
+    "description": "Brand: Local Farmer | 750g",
+    "price": 8.99,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/cafe/coffee.PNG?raw=true"
+  }
+]

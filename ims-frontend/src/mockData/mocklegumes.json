@@ -1,0 +1,142 @@
+[
+  {
+    "id": 181,
+    "title": "Chickpeas",
+    "description": "Brand: Origen | Ration 200g",
+    "price": 2.49,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/legumes/legume1.PNG?raw=true"
+  },
+  {
+    "id": 182,
+    "title": "Lentils",
+    "description": "Brand: Origen | Ration 200g",
+    "price": 2.99,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/legumes/legume2.PNG?raw=true"
+  },
+  {
+    "id": 183,
+    "title": "Pinto Beans",
+    "description": "Brand: Vegas | Ration 200g",
+    "price": 3.29,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/legumes/legume3.PNG?raw=true"
+  },
+  {
+    "id": 184,
+    "title": "Black Beans",
+    "description": "Brand: Vegas | Ration 200g",
+    "price": 3.49,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/legumes/legume4.PNG?raw=true"
+  },
+  {
+    "id": 185,
+    "title": "Chickpeas",
+    "description": "Brand: Artesanal | Ration 200g",
+    "price": 4.49,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/legumes/legume5.PNG?raw=true"
+  },
+  {
+    "id": 186,
+    "title": "Black Beans",
+    "description": "Brand: Artesanal | Ration 200g",
+    "price": 4.79,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/legumes/legume6.PNG?raw=true"
+  },
+  {
+    "id": 187,
+    "title": "White Beans",
+    "description": "Brand: Artesanal | Ration 200g",
+    "price": 4.59,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/legumes/legume7.PNG?raw=true"
+  },
+  {
+    "id": 188,
+    "title": "Pinto Beans",
+    "description": "Brand: Artesanal | Ration 200g",
+    "price": 4.79,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/legumes/legume8.PNG?raw=true"
+  },
+  {
+    "id": 189,
+    "title": "Spinach Ravioli",
+    "description": "Brand: Rana | Ration 200g",
+    "price": 5.49,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/legumes/legume9.PNG?raw=true"
+  },
+  {
+    "id": 190,
+    "title": "Four Cheese Ravioli",
+    "description": "Brand: Rana | Ration 200g",
+    "price": 5.99,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/legumes/legume10.PNG?raw=true"
+  },
+  {
+    "id": 191,
+    "title": "Mushroom Ravioli",
+    "description": "Brand: Rana | Ration 200g",
+    "price": 6.29,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/legumes/legume11.PNG?raw=true"
+  },
+  {
+    "id": 192,
+    "title": "Gnocchi",
+    "description": "Brand: Rana | Ration 200g",
+    "price": 4.99,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/legumes/legume12.PNG?raw=true"
+  },
+  {
+    "id": 193,
+    "title": "Whole Grain Lentils",
+    "description": "Brand: Origen | Ration 200g",
+    "price": 3.19,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/legumes/legume.PNG?raw=true"
+  },
+  {
+    "id": 194,
+    "title": "Red Beans",
+    "description": "Brand: Artesanal | Ration 200g",
+    "price": 4.79,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/legumes/legume.PNG?raw=true"
+  },
+  {
+    "id": 195,
+    "title": "Macaroni",
+    "description": "Brand: Rana | Ration 200g",
+    "price": 3.99,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/legumes/legume.PNG?raw=true"
+  },
+  {
+    "id": 196,
+    "title": "Whole Wheat Pasta",
+    "description": "Brand: Rana | Ration 200g",
+    "price": 4.49,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/legumes/legume.PNG?raw=true"
+  },
+  {
+    "id": 197,
+    "title": "Cannelloni",
+    "description": "Brand: Rana | Ration 200g",
+    "price": 6.49,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/legumes/legume.PNG?raw=true"
+  },
+  {
+    "id": 198,
+    "title": "Red Lentils",
+    "description": "Brand: Origen | Ration 200g",
+    "price": 3.29,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/legumes/legume.PNG?raw=true"
+  },
+  {
+    "id": 199,
+    "title": "Pasta Salad",
+    "description": "Brand: Rana | Ration 200g",
+    "price": 5.49,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/legumes/legume.PNG?raw=true"
+  },
+  {
+    "id": 200,
+    "title": "Chickpea Soup",
+    "description": "Brand: Artesanal | Ration 200g",
+    "price": 5.99,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/legumes/legume.PNG?raw=true"
+  }
+]

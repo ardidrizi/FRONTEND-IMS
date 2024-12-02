@@ -107,7 +107,9 @@ const HomePage: React.FC = () => {
           {message && (
             <p
               className={`mt-2 text-xs font-medium text-center ${
-                message.includes("Congratulations") ? "text-green-600" : "text-red-600"
+                message.includes("Congratulations")
+                  ? "text-green-600"
+                  : "text-red-600"
               }`}
             >
               {message}
@@ -169,4 +171,3 @@ const HomePage: React.FC = () => {
 };
 
 export default HomePage;
-

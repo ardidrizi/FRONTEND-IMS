@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 
 interface Product {
   id: number;
@@ -15,9 +15,9 @@ const Products: React.FC = () => {
 
   useEffect(() => {
     axios
-      .get<Product[]>('http://localhost:3000/products')
+      .get<Product[]>("http://localhost:5000/api/products")
       .then((response) => setProducts(response.data))
-      .catch((error) => console.error('Error fetching products:', error));
+      .catch((error) => console.error("Error fetching products:", error));
   }, []);
 
   return (
@@ -25,9 +25,9 @@ const Products: React.FC = () => {
       className="min-h-screen"
       style={{
         backgroundImage: `url('/images/fastlogo.png')`, // Ruta de la imagen
-        backgroundSize: 'cover', // Asegura que cubra el fondo completo
-        backgroundPosition: 'center', // Centra la imagen
-        backgroundRepeat: 'no-repeat', // Evita que se repita
+        backgroundSize: "cover", // Asegura que cubra el fondo completo
+        backgroundPosition: "center", // Centra la imagen
+        backgroundRepeat: "no-repeat", // Evita que se repita
       }}
     >
       <div className="pt-16 max-w-7xl mx-auto px-4">

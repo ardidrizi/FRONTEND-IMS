@@ -7,7 +7,7 @@ import Products from "./pages/Products";
 import Suppliers from "./pages/Suppliers";
 import Orders from "./pages/OrdersPage";
 import Login from "./pages/Login";
-// import LoginUserPage from "./pages/LoginUserPage";
+import LoginUserPage from "./pages/LoginUserPage";
 import SignUserPage from "./pages/SignUserPage";
 import HomePage from "./pages/HomePage";
 import SupermarketPage from "./pages/SupermarketPage";
@@ -68,9 +68,10 @@ const App: React.FC = () => {
                 <Route path="/supermarket/cart" element={<CartPage />} />
                 <Route path="/profile" element={<MyProfilePage />} />
                 <Route path="/" element={<HomePage />} />
+                <Route path="/login" element={<LoginUserPage />} />
 
                 {/* Rutas de autenticación */}
-                <Route path="/login" element={<LoginComponent />} />
+                <Route path="/admin/login" element={<LoginComponent />} />
                 <Route path="/signup" element={<SignUserPage />} />
               </Routes>
             </div>

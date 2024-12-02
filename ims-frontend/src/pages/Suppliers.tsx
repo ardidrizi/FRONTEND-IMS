@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 
 interface Supplier {
   id: number;
@@ -15,9 +15,9 @@ const Suppliers: React.FC = () => {
 
   useEffect(() => {
     axios
-      .get<Supplier[]>('http://localhost:3000/suppliers')
+      .get<Supplier[]>("http://localhost:5000/api/suppliers")
       .then((response) => setSuppliers(response.data))
-      .catch((error) => console.error('Error fetching suppliers:', error));
+      .catch((error) => console.error("Error fetching suppliers:", error));
   }, []);
 
   return (
@@ -25,9 +25,9 @@ const Suppliers: React.FC = () => {
       className="min-h-screen"
       style={{
         backgroundImage: `url('/images/fastlogo.png')`, // Ruta de la imagen
-        backgroundSize: 'cover', // Asegura que cubra el fondo completo
-        backgroundPosition: 'center', // Centra la imagen
-        backgroundRepeat: 'no-repeat', // Evita que se repita
+        backgroundSize: "cover", // Asegura que cubra el fondo completo
+        backgroundPosition: "center", // Centra la imagen
+        backgroundRepeat: "no-repeat", // Evita que se repita
       }}
     >
       <div className="pt-16 max-w-7xl mx-auto px-4">
@@ -36,7 +36,9 @@ const Suppliers: React.FC = () => {
           <thead>
             <tr>
               <th className="px-4 py-2 text-left text-gray-700">Name</th>
-              <th className="px-4 py-2 text-left text-gray-700">Contact Info</th>
+              <th className="px-4 py-2 text-left text-gray-700">
+                Contact Info
+              </th>
               <th className="px-4 py-2 text-left text-gray-700">Email</th>
               <th className="px-4 py-2 text-left text-gray-700">Phone</th>
               <th className="px-4 py-2 text-left text-gray-700">Address</th>
