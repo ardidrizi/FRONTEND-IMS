@@ -1,12 +1,15 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { useAuth } from '../context/AuthContext'; // Importamos el contexto de autenticación
+import React from "react";
+import { Link } from "react-router-dom";
+import { useAuth } from "../context/AuthContext"; // Importamos el contexto de autenticación
 
 const NavbarSupermarket: React.FC = () => {
   const { isLoggedIn, logout } = useAuth(); // Usamos isLoggedIn y logout del AuthContext
 
   return (
-    <nav className="shadow fixed top-0 left-0 w-full z-50" style={{ backgroundColor: '#199aaf' }}>
+    <nav
+      className="shadow fixed top-0 left-0 w-full z-50"
+      style={{ backgroundColor: "#199aaf" }}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
@@ -25,16 +28,20 @@ const NavbarSupermarket: React.FC = () => {
             <Link
               to="/supermarket"
               className="hover:text-white transition"
-              style={{ color: '#cdedfe' }}
+              style={{ color: "#cdedfe" }}
             >
               Home
             </Link>
             <Link
               to="/supermarket/cart"
-              className="hover:text-white transition"
-              style={{ color: '#cdedfe' }}
+              className="hover:text-white transition flex items-center"
+              style={{ color: "#cdedfe" }}
             >
-              Cart
+              <img
+                src="../public/images/bag.png"
+                alt="Cart Icon"
+                className="h-8 w-8" /* Tamaño más grande */
+              />
             </Link>
 
             {/* Auth Section */}
@@ -43,7 +50,7 @@ const NavbarSupermarket: React.FC = () => {
                 <Link
                   to="/profile"
                   className="hover:text-white transition"
-                  style={{ color: '#cdedfe' }}
+                  style={{ color: "#cdedfe" }}
                 >
                   My Profile
                 </Link>
@@ -51,7 +58,7 @@ const NavbarSupermarket: React.FC = () => {
                 <button
                   onClick={logout}
                   className="hover:text-white transition"
-                  style={{ color: '#cdedfe' }}
+                  style={{ color: "#cdedfe" }}
                 >
                   Logoff
                 </button>
@@ -60,7 +67,7 @@ const NavbarSupermarket: React.FC = () => {
               <Link
                 to="/login"
                 className="hover:text-white transition"
-                style={{ color: '#cdedfe' }}
+                style={{ color: "#cdedfe" }}
               >
                 Login
               </Link>

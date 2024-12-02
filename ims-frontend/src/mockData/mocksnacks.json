@@ -1,0 +1,212 @@
+[
+  {
+    "id": 361,
+    "title": "Chips",
+    "description": "Brand: Lays Gourmet | 200g",
+    "price": 2.49,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/snacks/snacks1.PNG?raw=true"
+  },
+  {
+    "id": 362,
+    "title": "Thin Chips",
+    "description": "Brand: Lays Gourmet | 200g",
+    "price": 2.49,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/snacks/snacks2.PNG?raw=true"
+  },
+  {
+    "id": 363,
+    "title": "Onduladas Chips",
+    "description": "Brand: Lays Gourmet | 200g",
+    "price": 2.69,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/snacks/snacks3.PNG?raw=true"
+  },
+  {
+    "id": 364,
+    "title": "Onduladas Chips Olive Oil",
+    "description": "Brand: Lays Gourmet | 200g",
+    "price": 2.89,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/snacks/sncaks4.PNG?raw=true"
+  },
+  {
+    "id": 365,
+    "title": "Truffled Egg Chips",
+    "description": "Brand: Lays Gourmet | 200g",
+    "price": 3.29,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/snacks/snacks5.PNG?raw=true"
+  },
+  {
+    "id": 366,
+    "title": "Spicy Chips",
+    "description": "Brand: Ruffles | 150g",
+    "price": 2.59,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/snacks/snacks6.PNG?raw=true"
+  },
+  {
+    "id": 367,
+    "title": "Pelotazos",
+    "description": "Brand: Cheetos | 120g",
+    "price": 1.99,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/snacks/snacks7.PNG?raw=true"
+  },
+  {
+    "id": 368,
+    "title": "Pandilla",
+    "description": "Brand: Cheetos | 100g",
+    "price": 1.79,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/snacks/snacks8.PNG?raw=true"
+  },
+  {
+    "id": 369,
+    "title": "Chili Chips",
+    "description": "Brand: Doritos | 150g",
+    "price": 2.49,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/snacks/snacks9.PNG?raw=true"
+  },
+  {
+    "id": 370,
+    "title": "Tex Mex Chips",
+    "description": "Brand: Doritos | 150g",
+    "price": 2.69,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/snacks/snacks10.PNG?raw=true"
+  },
+  {
+    "id": 371,
+    "title": "Flaming Hot Chips",
+    "description": "Brand: Doritos | 150g",
+    "price": 2.79,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/snacks/snacks11.PNG?raw=true"
+  },
+  {
+    "id": 372,
+    "title": "BBQ Chips",
+    "description": "Brand: Doritos | 150g",
+    "price": 2.89,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/snacks/snacks12.PNG?raw=true"
+  },
+  {
+    "id": 373,
+    "title": "Salted Chips",
+    "description": "Brand: Lays | 150g",
+    "price": 2.39,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/snacks/snacks.PNG?raw=true"
+  },
+  {
+    "id": 374,
+    "title": "Cheese Chips",
+    "description": "Brand: Ruffles | 150g",
+    "price": 2.59,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/snacks/snacks.PNG?raw=true"
+  },
+  {
+    "id": 375,
+    "title": "Prawn Cocktail Chips",
+    "description": "Brand: Lays | 150g",
+    "price": 2.79,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/snacks/snacks.PNG?raw=true"
+  },
+  {
+    "id": 376,
+    "title": "Sweet Popcorn",
+    "description": "Brand: Gourmet | 200g",
+    "price": 3.19,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/snacks/snacks.PNG?raw=true"
+  },
+  {
+    "id": 377,
+    "title": "Salted Popcorn",
+    "description": "Brand: Gourmet | 200g",
+    "price": 2.99,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/snacks/snacks.PNG?raw=true"
+  },
+  {
+    "id": 378,
+    "title": "Tortilla Chips",
+    "description": "Brand: Mission | 300g",
+    "price": 3.49,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/snacks/snacks.PNG?raw=true"
+  },
+  {
+    "id": 379,
+    "title": "Caramel Popcorn",
+    "description": "Brand: Gourmet | 200g",
+    "price": 3.49,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/snacks/snacks.PNG?raw=true"
+  },
+  {
+    "id": 380,
+    "title": "Peanut Snacks",
+    "description": "Brand: Bamba | 100g",
+    "price": 1.99,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/snacks/snacks.PNG?raw=true"
+  },
+  {
+    "id": 381,
+    "title": "Nacho Cheese Chips",
+    "description": "Brand: Doritos | 150g",
+    "price": 2.79,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/snacks/snacks.PNG?raw=true"
+  },
+  {
+    "id": 382,
+    "title": "Honey Mustard Pretzels",
+    "description": "Brand: Snyder's | 150g",
+    "price": 3.29,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/snacks/snacks.PNG?raw=true"
+  },
+  {
+    "id": 383,
+    "title": "BBQ Popcorn",
+    "description": "Brand: Gourmet | 200g",
+    "price": 3.29,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/snacks/snacks.PNG?raw=true"
+  },
+  {
+    "id": 384,
+    "title": "Hot Corn Snacks",
+    "description": "Brand: Takis | 150g",
+    "price": 2.89,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/snacks/snacks.PNG?raw=true"
+  },
+  {
+    "id": 385,
+    "title": "Sweet Corn Snacks",
+    "description": "Brand: Takis | 150g",
+    "price": 2.89,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/snacks/snacks.PNG?raw=true"
+  },
+  {
+    "id": 386,
+    "title": "Salted Pretzels",
+    "description": "Brand: Snyder's | 150g",
+    "price": 2.59,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/snacks/snacks.PNG?raw=true"
+  },
+  {
+    "id": 387,
+    "title": "Chocolate Pretzels",
+    "description": "Brand: Snyder's | 150g",
+    "price": 3.49,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/snacks/snacks.PNG?raw=true"
+  },
+  {
+    "id": 388,
+    "title": "Salted Cashews",
+    "description": "Brand: Planters | 200g",
+    "price": 4.49,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/snacks/snacks.PNG?raw=true"
+  },
+  {
+    "id": 389,
+    "title": "Roasted Almonds",
+    "description": "Brand: Planters | 200g",
+    "price": 4.99,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/snacks/snacks.PNG?raw=true"
+  },
+  {
+    "id": 390,
+    "title": "Mixed Nuts",
+    "description": "Brand: Planters | 250g",
+    "price": 5.49,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/snacks/snacks.PNG?raw=true"
+  }
+]

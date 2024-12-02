@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 
 interface Order {
   id: number;
@@ -14,9 +14,9 @@ const Orders: React.FC = () => {
 
   useEffect(() => {
     axios
-      .get<Order[]>('http://localhost:3000/orders')
+      .get<Order[]>("http://localhost:5000/api/orders")
       .then((response) => setOrders(response.data))
-      .catch((error) => console.error('Error fetching orders:', error));
+      .catch((error) => console.error("Error fetching orders:", error));
   }, []);
 
   return (
@@ -24,9 +24,9 @@ const Orders: React.FC = () => {
       className="min-h-screen"
       style={{
         backgroundImage: `url('/images/fastlogo.png')`, // Ruta de la imagen
-        backgroundSize: 'cover', // Asegura que cubra el fondo completo
-        backgroundPosition: 'center', // Centra la imagen
-        backgroundRepeat: 'no-repeat', // Evita que se repita
+        backgroundSize: "cover", // Asegura que cubra el fondo completo
+        backgroundPosition: "center", // Centra la imagen
+        backgroundRepeat: "no-repeat", // Evita que se repita
       }}
     >
       <div className="pt-16 max-w-7xl mx-auto px-4">
@@ -35,10 +35,14 @@ const Orders: React.FC = () => {
           <thead>
             <tr>
               <th className="px-4 py-2 text-left text-gray-700">Order ID</th>
-              <th className="px-4 py-2 text-left text-gray-700">Customer Name</th>
+              <th className="px-4 py-2 text-left text-gray-700">
+                Customer Name
+              </th>
               <th className="px-4 py-2 text-left text-gray-700">Order Date</th>
               <th className="px-4 py-2 text-left text-gray-700">Status</th>
-              <th className="px-4 py-2 text-left text-gray-700">Total Amount</th>
+              <th className="px-4 py-2 text-left text-gray-700">
+                Total Amount
+              </th>
             </tr>
           </thead>
           <tbody>
@@ -46,7 +50,9 @@ const Orders: React.FC = () => {
               <tr key={order.id} className="hover:bg-gray-100 transition">
                 <td className="px-4 py-2">{order.id}</td>
                 <td className="px-4 py-2">{order.customerName}</td>
-                <td className="px-4 py-2">{new Date(order.orderDate).toLocaleDateString()}</td>
+                <td className="px-4 py-2">
+                  {new Date(order.orderDate).toLocaleDateString()}
+                </td>
                 <td className="px-4 py-2">{order.status}</td>
                 <td className="px-4 py-2">${order.totalAmount.toFixed(2)}</td>
               </tr>

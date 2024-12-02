@@ -1,0 +1,212 @@
+[
+  {
+    "id": 241,
+    "title": "Bilbao-Style Cod",
+    "description": "Ration 200g",
+    "price": 12.99,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/fresh/fresh1.PNG?raw=true"
+  },
+  {
+    "id": 242,
+    "title": "Biscayan-Style Cod",
+    "description": "Ration 200g",
+    "price": 12.99,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/fresh/fresh2.PNG?raw=true"
+  },
+  {
+    "id": 243,
+    "title": "Green Beans",
+    "description": "Ration 200g",
+    "price": 3.99,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/fresh/fresh3.PNG?raw=true"
+  },
+  {
+    "id": 244,
+    "title": "Tuna Salad",
+    "description": "Ration 200g",
+    "price": 4.49,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/fresh/fresh4.PNG?raw=true"
+  },
+  {
+    "id": 245,
+    "title": "Shrimps",
+    "description": "Ration 200g",
+    "price": 14.99,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/fresh/fresh5.PNG?raw=true"
+  },
+  {
+    "id": 246,
+    "title": "Anchovies",
+    "description": "Ration 200g",
+    "price": 10.99,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/fresh/fresh6.PNG?raw=true"
+  },
+  {
+    "id": 247,
+    "title": "Croquettes",
+    "description": "Ration 200g",
+    "price": 5.49,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/fresh/fresh7.PNG?raw=true"
+  },
+  {
+    "id": 248,
+    "title": "Chicken Fingers",
+    "description": "Ration 200g",
+    "price": 5.99,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/fresh/fresh8.PNG?raw=true"
+  },
+  {
+    "id": 249,
+    "title": "Mussels",
+    "description": "Ration 200g",
+    "price": 8.99,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/fresh/fresh9.PNG?raw=true"
+  },
+  {
+    "id": 250,
+    "title": "Vegetable Medley",
+    "description": "Ration 200g",
+    "price": 4.49,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/fresh/fresh10.PNG?raw=true"
+  },
+  {
+    "id": 251,
+    "title": "Potato Omelette",
+    "description": "Ration 200g",
+    "price": 3.99,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/fresh/fresh11.PNG?raw=true"
+  },
+  {
+    "id": 252,
+    "title": "Beef Stew",
+    "description": "Ration 200g",
+    "price": 9.99,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/fresh/fresh12.PNG?raw=true"
+  },
+  {
+    "id": 253,
+    "title": "Grilled Salmon",
+    "description": "Ration 200g",
+    "price": 15.99,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/fresh/fresh.PNG?raw=true"
+  },
+  {
+    "id": 254,
+    "title": "Roast Chicken",
+    "description": "Ration 200g",
+    "price": 7.99,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/fresh/fresh.PNG?raw=true"
+  },
+  {
+    "id": 255,
+    "title": "Stuffed Peppers",
+    "description": "Ration 200g",
+    "price": 6.99,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/fresh/fresh.PNG?raw=true"
+  },
+  {
+    "id": 256,
+    "title": "Lentil Soup",
+    "description": "Ration 200g",
+    "price": 4.99,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/fresh/fresh.PNG?raw=true"
+  },
+  {
+    "id": 257,
+    "title": "Hake in Green Sauce",
+    "description": "Ration 200g",
+    "price": 13.99,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/fresh/fresh.PNG?raw=true"
+  },
+  {
+    "id": 258,
+    "title": "Ratatouille",
+    "description": "Ration 200g",
+    "price": 5.99,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/fresh/fresh.PNG?raw=true"
+  },
+  {
+    "id": 259,
+    "title": "Seafood Paella",
+    "description": "Ration 200g",
+    "price": 14.99,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/fresh/fresh.PNG?raw=true"
+  },
+  {
+    "id": 260,
+    "title": "Vegetarian Paella",
+    "description": "Ration 200g",
+    "price": 6.99,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/fresh/fresh.PNG?raw=true"
+  },
+  {
+    "id": 261,
+    "title": "Meatballs in Sauce",
+    "description": "Ration 200g",
+    "price": 8.99,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/fresh/fresh.PNG?raw=true"
+  },
+  {
+    "id": 262,
+    "title": "Grilled Vegetables",
+    "description": "Ration 200g",
+    "price": 4.99,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/fresh/fresh.PNG?raw=true"
+  },
+  {
+    "id": 263,
+    "title": "Steamed Mussels",
+    "description": "Ration 200g",
+    "price": 9.99,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/fresh/fresh.PNG?raw=true"
+  },
+  {
+    "id": 264,
+    "title": "Pork Ribs",
+    "description": "Ration 200g",
+    "price": 7.99,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/fresh/fresh.PNG?raw=true"
+  },
+  {
+    "id": 265,
+    "title": "Grilled Squid",
+    "description": "Ration 200g",
+    "price": 14.49,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/fresh/fresh.PNG?raw=true"
+  },
+  {
+    "id": 266,
+    "title": "Chickpea Stew",
+    "description": "Ration 200g",
+    "price": 5.99,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/fresh/fresh.PNG?raw=true"
+  },
+  {
+    "id": 267,
+    "title": "Seafood Stew",
+    "description": "Ration 200g",
+    "price": 15.99,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/fresh/fresh.PNG?raw=true"
+  },
+  {
+    "id": 268,
+    "title": "Chicken Curry",
+    "description": "Ration 200g",
+    "price": 8.49,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/fresh/fresh.PNG?raw=true"
+  },
+  {
+    "id": 269,
+    "title": "Vegetable Lasagna",
+    "description": "Ration 200g",
+    "price": 7.99,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/fresh/fresh.PNG?raw=true"
+  },
+  {
+    "id": 270,
+    "title": "Beef Lasagna",
+    "description": "Ration 200g",
+    "price": 8.99,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/fresh/fresh.PNG?raw=true"
+  }
+]

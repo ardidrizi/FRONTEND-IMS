@@ -2,86 +2,86 @@
   {
     "id": "o1",
     "title": "Extra Virgin Olive Oil",
-    "description": "Brand: Bertolli | 500ml",
-    "price": 6.49,
-    "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/oil.PNG?raw=true"
+    "description": "Brand: Coosur | 500ml",
+    "price": 9.49,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/oil/oliveoil.PNG?raw=true"
   },
   {
     "id": "o2",
     "title": "Organic Olive Oil",
-    "description": "Brand: Colavita | 750ml",
-    "price": 8.99,
-    "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/oil.PNG?raw=true"
+    "description": "Brand: Coosur | 750ml",
+    "price": 15.99,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/oil/oliveoil2.PNG?raw=true"
   },
   {
     "id": "o3",
     "title": "Classic Olive Oil",
-    "description": "Brand: Filippo Berio | 1L",
-    "price": 9.49,
-    "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/oil.PNG?raw=true"
+    "description": "Brand: Coosur | 5L",
+    "price": 40.49,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/oil/oliveoil3.PNG?raw=true"
+  },
+  {
+    "id": "o",
+    "title": "Bio Olive Oil",
+    "description": "Brand: Coosur | 500ml",
+    "price": 8.49,
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/oil/oliveoil4.PNG?raw=true"
   },
   {
     "id": "o4",
-    "title": "Rapsöl (Canola Oil)",
-    "description": "Brand: Rapso | 1L",
+    "title": "SAL DE IBIZA",
+    "description": "Brand: SAL DE IBIZA | 100G",
     "price": 4.49,
-    "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/oil.PNG?raw=true"
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/oil/sal3.PNG?raw=true"
   },
   {
     "id": "o5",
     "title": "Balsamic Vinegar",
     "description": "Brand: Modena | 500ml",
     "price": 5.99,
-    "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/oil.PNG?raw=true"
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/oil/vinagre1.PNG?raw=true"
   },
   {
     "id": "o6",
     "title": "Apple Cider Vinegar",
     "description": "Brand: Bragg | 1L",
     "price": 7.49,
-    "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/oil.PNG?raw=true"
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/oil/vinagre2.PNG?raw=true"
   },
   {
     "id": "o7",
     "title": "Sea Salt",
     "description": "Brand: Maldon | 250g",
     "price": 3.49,
-    "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/oil.PNG?raw=true"
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/oil/sal1.PNG?raw=true"
   },
   {
     "id": "o8",
     "title": "Himalayan Pink Salt",
     "description": "Brand: Sherpa | 500g",
     "price": 4.99,
-    "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/oil.PNG?raw=true"
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/oil/sal2.PNG?raw=true"
   },
   {
     "id": "o9",
     "title": "Black Peppercorns",
     "description": "Brand: McCormick | 100g",
     "price": 5.49,
-    "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/oil.PNG?raw=true"
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/oil/pimienta.PNG?raw=true"
   },
   {
     "id": "o10",
-    "title": "Ground White Pepper",
+    "title": "Cayena",
     "description": "Brand: Kania | 200g",
     "price": 4.29,
-    "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/oil.PNG?raw=true"
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/oil/cayena.PNG?raw=true"
   },
   {
     "id": "o11",
-    "title": "Ketchup",
-    "description": "Brand: Heinz | 750ml",
+    "title": "Pepper",
+    "description": "Brand: Maldon | 30g",
     "price": 3.99,
-    "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/oil.PNG?raw=true"
-  },
-  {
-    "id": "o12",
-    "title": "Mayonnaise",
-    "description": "Brand: Hellmann's | 500ml",
-    "price": 3.49,
-    "image": "https://github.com/M0N1C/FRONTEND-IMS/blob/main/ims-frontend/public/images/categories/oil.PNG?raw=true"
+    "image": "https://github.com/M0N1C/IMS/blob/main/ims-frontend/public/images/oil/pimienta2.PNG?raw=true"
   },
   {
     "id": "o13",
